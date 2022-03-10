@@ -84,4 +84,37 @@
             height: 100%;
         }
     }
+    /*SERVICIOS A*/
+
+    .serviciosA{
+        .cajaResidenciales{
+            .tituloResidenciales{
+                font-size: 18px;
+            }     
+            .leyendaResidenciales{
+                font-size: 15px;
+            }
+        }
+    }
+    
+    /*SERVICIOS B*/
+
+    .serviciosB{
+        .cajaDesarrollos{
+            .tituloDesarrollos{
+                font-size: 18px;
+            }     
+            .leyendaDesarrollos{
+                font-size: 15px;
+            }
+        }
+    }
+
+    /*UBICACION*/
+
+    .cajaUbicacion{
+        width: 80%;
+        grid-template-columns: 10% 80% 10%;
+    }
 }
+

@@ -72,4 +72,71 @@
             grid-area: leyenda;
         }              
     }
+
+    /*SERVICIOS A*/
+
+    .serviciosA{
+        grid-template-rows: 350px 300px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas:  ". sa3 ."
+                              ". sa2. ";
+
+        .imagenResidenciales{
+            grid-area: sa2;
+            height: auto;
+            width: 100%;
+        }
+        .cajaResidenciales{
+            width: 100%;
+            height: 350px;
+            grid-area: sa3;
+
+            .leyendaResidenciales{
+                font-size: 14px;
+                height: 180px;
+                padding: 20px 20px 20px 20px;
+                grid-area: sa3;
+            }
+        }
+    }
+
+    /*SERVICIOS B*/
+
+    .serviciosB{
+        grid-template-rows: 400px 300px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas:  ". sa3 ."
+                              ". sa2. ";
+
+        .imagenDesarrollos{
+            grid-area: sa2;
+            height: auto;
+            width: 100%;
+        }                 
+        .cajaDesarrollos{
+            width: 100%;
+            height: 400px;
+            grid-area: sa3;
+
+            .leyendaDesarrollos{
+                font-size: 14px;
+                height: 180px;
+                padding: 20px 20px 20px 20px;
+                grid-area: sa3;
+            } 
+        }                      
+    }
+
+    /*CONTACTO FORM*/
+
+    .formContacto {
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px 50px 50px 110px 30px;
+        grid-template-areas: "area1"
+                             "area3"
+                             "area4"
+                             "area5"
+                             "area2"
+                             "area6";
+    }
 }

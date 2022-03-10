@@ -280,7 +280,7 @@
   grid-template-columns: 40% 50%;
   grid-template-areas: "sa2 sa3";
   justify-content: center;
-  margin-bottom: 50px; }
+  margin-bottom: 0px; }
   .serviciosA .imagenResidenciales {
     grid-area: sa2;
     height: 100%; }
@@ -308,7 +308,7 @@
 
 /*SERVICIOS B*/
 .serviciosB {
-  margin-top: 50px;
+  margin-top: 30px;
   display: grid;
   grid-template-rows: 400px;
   grid-template-columns: 40% 50%;
@@ -685,7 +685,21 @@
         grid-area: ic2; }
     .indexC .ejecucionObraimg {
       grid-area: ic3;
-      height: 100%; } }
+      height: 100%; }
+  /*SERVICIOS A*/
+  .serviciosA .cajaResidenciales .tituloResidenciales {
+    font-size: 18px; }
+  .serviciosA .cajaResidenciales .leyendaResidenciales {
+    font-size: 15px; }
+  /*SERVICIOS B*/
+  .serviciosB .cajaDesarrollos .tituloDesarrollos {
+    font-size: 18px; }
+  .serviciosB .cajaDesarrollos .leyendaDesarrollos {
+    font-size: 15px; }
+  /*UBICACION*/
+  .cajaUbicacion {
+    width: 80%;
+    grid-template-columns: 10% 80% 10%; } }
 
 @media screen and (max-width: 750px) {
   /*MEDIA HEADER*/
@@ -703,17 +717,25 @@
       width: 95%;
       height: 350px; }
   /*SERVICIOS A*/
-  .leyendaResidenciales {
-    padding: 15px 15px 15px 15px;
-    font-size: 15px; }
-  .leyendaDesarrollos {
-    padding: 15px 15px 15px 15px;
-    font-size: 15px; }
+  .serviciosA .cajaResidenciales .tituloResidenciales {
+    font-size: 16px; }
+  .serviciosA .cajaResidenciales .leyendaResidenciales {
+    font-size: 14px;
+    padding: 20px 10px 20px 10px; }
+  /*SERVICIOS B*/
+  .serviciosB .cajaDesarrollos .tituloDesarrollos {
+    font-size: 16px; }
+  .serviciosB .cajaDesarrollos .leyendaDesarrollos {
+    font-size: 14px;
+    padding: 20px 10px 20px 10px; }
   /*GALERIA*/
   .galeria {
     grid-template-rows: 450px 50px 450px 50px 450px 50px 450px 50px;
     grid-template-columns: 10% 80% 10%;
-    grid-template-areas: ". ga1 ." ".  .  ." ". ga2 ." ".  .  ." ". ga3 ." ".  .  ." ". ga4 ." ".  .  ."; } }
+    grid-template-areas: ". ga1 ." ".  .  ." ". ga2 ." ".  .  ." ". ga3 ." ".  .  ." ". ga4 ." ".  .  ."; }
+  /*CONTACTO FORM*/
+  .formContacto {
+    width: 80%; } }
 
 @media screen and (max-width: 600px) {
   /*MEDIA HEADER*/
@@ -773,7 +795,7 @@
     .indexC .ejecucionObraimg {
       grid-area: ic3;
       width: 100%; }
-  /*MEDIA SERVICIOS A*/
+  /*SERVICIOS A*/
   .serviciosA {
     grid-template-rows: 350px 300px;
     grid-template-columns: 15% 70% 15%;
@@ -808,7 +830,11 @@
         font-size: 14px;
         height: 180px;
         padding: 20px 20px 20px 20px;
-        grid-area: sa3; } }
+        grid-area: sa3; }
+  /*UBICACION*/
+  .cajaUbicacion {
+    width: 80%;
+    grid-template-columns: 5% 90% 5%; } }
 
 @media screen and (max-width: 485px) {
   .navegacionFondocaja nav {
@@ -861,7 +887,48 @@
       position: static;
       right: 0px;
       bottom: 0px;
-      grid-area: leyenda; } }
+      grid-area: leyenda; }
+  /*SERVICIOS A*/
+  .serviciosA {
+    grid-template-rows: 350px 300px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". sa3 ." ". sa2. "; }
+    .serviciosA .imagenResidenciales {
+      grid-area: sa2;
+      height: auto;
+      width: 100%; }
+    .serviciosA .cajaResidenciales {
+      width: 100%;
+      height: 350px;
+      grid-area: sa3; }
+      .serviciosA .cajaResidenciales .leyendaResidenciales {
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3; }
+  /*SERVICIOS B*/
+  .serviciosB {
+    grid-template-rows: 400px 300px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". sa3 ." ". sa2. "; }
+    .serviciosB .imagenDesarrollos {
+      grid-area: sa2;
+      height: auto;
+      width: 100%; }
+    .serviciosB .cajaDesarrollos {
+      width: 100%;
+      height: 400px;
+      grid-area: sa3; }
+      .serviciosB .cajaDesarrollos .leyendaDesarrollos {
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3; }
+  /*CONTACTO FORM*/
+  .formContacto {
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 50px 50px 110px 30px;
+    grid-template-areas: "area1" "area3" "area4" "area5" "area2" "area6"; } }
 
 /*ANIMACIONES*/
 .navegacionFondocaja nav li .navegador:hover {

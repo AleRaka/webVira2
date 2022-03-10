@@ -93,7 +93,7 @@
         }
     }
 
-    /*MEDIA SERVICIOS A*/
+    /*SERVICIOS A*/
 
     .serviciosA{
         grid-template-rows: 350px 300px;
@@ -145,5 +145,12 @@
                 grid-area: sa3;
             } 
         }                      
+    }
+    
+    /*UBICACION*/
+
+    .cajaUbicacion{
+        width: 80%;
+        grid-template-columns: 5% 90% 5%;
     }
 }    

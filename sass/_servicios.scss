@@ -20,7 +20,7 @@
     grid-template-columns: 40% 50%;
     grid-template-areas: "sa2 sa3";
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 
     .imagenResidenciales{
         grid-area: sa2;
@@ -57,7 +57,7 @@
     /*SERVICIOS B*/
 
 .serviciosB{
-    margin-top: 50px;
+    margin-top: 30px;
     display: grid;
     grid-template-rows: 400px;
     grid-template-columns: 40% 50%;

@@ -29,13 +29,30 @@
 
     /*SERVICIOS A*/
 
-    .leyendaResidenciales{
-        padding: 15px 15px 15px 15px;
-        font-size: 15px;
+    .serviciosA{
+        .cajaResidenciales{
+            .tituloResidenciales{
+                font-size: 16px;
+            }     
+            .leyendaResidenciales{
+                font-size: 14px;
+                padding: 20px 10px 20px 10px;
+            }
+        }
     }
-    .leyendaDesarrollos{
-        padding: 15px 15px 15px 15px;
-        font-size: 15px;
+    
+    /*SERVICIOS B*/
+
+    .serviciosB{
+        .cajaDesarrollos{
+            .tituloDesarrollos{
+                font-size: 16px;
+            }     
+            .leyendaDesarrollos{
+                font-size: 14px;
+                padding: 20px 10px 20px 10px;
+            }
+        }
     }
 
     /*GALERIA*/
@@ -51,5 +68,10 @@
                              ".  .  ."
                              ". ga4 ."
                              ".  .  .";
-    }   
+    }
+    /*CONTACTO FORM*/
+
+    .formContacto {
+        width: 80%;
+    } 
 }
