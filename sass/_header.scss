@@ -1,0 +1,63 @@
+.obraFondoimagen {
+    width: 100%;
+    opacity: 0.8;
+    height: 300px;
+}
+.navegacionFondocaja {
+    opacity: 0.8;
+    background-color: rgb(51, 102, 153);
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .logoVirablanco {
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        width: 170px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    nav{
+        margin-right: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+
+        li {
+            width: 130px;
+            display: inline-block;
+            text-align: center;
+
+            .navegador{
+                font-size: 15px;
+                color: white;
+                font-style: normal;
+                transition: 0.5s all;
+            }
+        }
+    }
+}
+.teAcompañamoscaja{
+    background-color: rgb(97, 133, 193);
+    opacity: 0.8;
+    height: 40px;
+    width: 290px;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .teAcompañamos {
+        color: white;
+        font-style: normal;
+        font-size: 14px;
+    }
+}

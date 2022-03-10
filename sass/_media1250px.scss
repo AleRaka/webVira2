@@ -1,0 +1,107 @@
+
+@media screen and (max-width: 1250px){
+        
+    /*INDEX A*/
+
+    .indexA{
+        margin-top: 80px;
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas: ". ia2 ."
+                             ". ia4 .";
+
+        .proporcionarEl{
+        margin-top: 0px;
+        height: 200px;
+        width: 100%;
+        }
+        .estamosEspecialmente {
+            margin-top: 0px;
+            font-size: 13px;
+            width: 95%;
+        }              
+    }
+
+    /*INDEX B*/
+  
+    .indexB{
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 50% 40%;
+        grid-template-areas: "ib2 ib3";
+        justify-content: center;
+
+        .cajaTecnica{
+            width: 100%;
+            height: 300px;
+            grid-area: ib2;
+            background-color: rgb(228, 228, 228);
+
+            .leyendaOficina{
+                text-align: left;
+                color: rgb(97, 133, 193);
+                font-style: normal;
+                font-size: 18px;
+                height: 250px;
+                padding: 15px 15px 15px 15px;
+                grid-area: ib2;
+            }
+        }
+        .oficinaTecnicaimg{
+            grid-area: ib3;
+            height: 100%;
+        }
+    }
+
+    /*INDEX C*/
+
+    .indexC{
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 50% 40%;
+        grid-template-areas: "ic2 ic3";
+        justify-content: center;
+
+        .cajaObra{
+            width: 100%;
+            height: 300px;
+            grid-area: ic2;
+            background-color: rgb(228, 228, 228);
+
+            .leyendaObra{
+                text-align: left;
+                color: rgb(97, 133, 193);
+                font-style: normal;
+                font-size: 18px;
+                height: 250px;
+                padding: 15px 15px 15px 15px;
+                grid-area: ic2;
+            }
+        }
+        .ejecucionObraimg{
+            grid-area: ic3;
+            height: 100%;
+        }
+    }
+
+    /*SERVICIOS A*/
+
+    .tituloResidenciales{
+        font-size: 17px;
+    }
+
+    .leyendaResidenciales{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .tituloDesarrollos{
+        font-size: 17px;
+    }
+
+    .leyendaDesarrollos{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+}

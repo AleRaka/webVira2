@@ -1,0 +1,83 @@
+@media screen and (max-width: 992px){
+    
+    /*HEADER*/
+
+    li {
+        width: 100px;
+    }
+
+    /*INDEX*/
+
+    .somosunaEmpresa{
+        width: 70%;
+    }
+    
+    /*INDEX A*/
+
+    .indexA{
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    /*INDEX B*/
+  
+    .indexB{
+        display: grid;
+        grid-template-rows: 255px;
+        grid-template-columns: 5% 40% 35% 20%;
+        grid-template-areas: ". ib2 ib3 .";
+        justify-content: center;
+
+        .cajaTecnica{
+            width: 100%;
+            height: 255px;
+            grid-area: ib2;
+
+            .oficinaTecnica{
+                padding-left: 15px;
+                text-align: left;
+                font-size: 15px;
+                height: 20px;
+            }
+            .leyendaOficina{
+                font-size: 13px;
+                height: 230px;
+                padding: 15px 15px 15px 15px;
+                grid-area: ib2;
+            }
+        }
+        .oficinaTecnicaimg{
+            grid-area: ib3;
+            height: 100%;
+        }
+    }
+
+    /*MEDIA INDEX C*/
+
+    .indexC{
+        grid-template-rows: 255px;
+        grid-template-columns: 5% 40% 35% 20%;
+        grid-template-areas: ". ic2 ic3 .";
+
+        .cajaObra{
+            width: 100%;
+            height: 255px;
+            grid-area: ic2;
+
+            .ejecucionObra{
+                padding-left: 15px;
+                font-size: 15px;
+                height: 20px;
+            }
+            .leyendaObra{
+                font-size: 13px;
+                height: 230px;
+                padding: 15px 15px 15px 15px;
+                grid-area: ic2;
+            }
+        }
+        .ejecucionObraimg{
+            grid-area: ic3;
+            height: 100%;
+        }
+    }
+}

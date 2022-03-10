@@ -1,0 +1,136 @@
+
+
+/*MAIN*/
+
+.tituloGaleria{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(51, 102, 153);
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-rows: 450px 50px 450px 50px;
+    grid-template-columns: 6.5% 40% 6.5% 40% 6.5%;
+    grid-template-areas: ". ga1 . ga2 . "
+                         ".  .  .  .  . "
+                         ". ga3 . ga4 . "
+                         ".  .  .  .  . ";
+    justify-content: center;
+
+    /*GALERIA A*/
+
+    .proyectosNexus{
+        grid-area: ga1;
+        display: grid;
+        grid-template-rows: 50px 400px;
+        grid-template-columns: 100%;
+        grid-template-areas: "title1"
+                              "img1";
+        justify-content: center;
+
+        .leyendaNexus{
+            grid-area: title1;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            color: black;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 20px;
+            border-bottom: solid 2px black;
+        }
+        
+        .imagenesNexus{
+            grid-area: img1;
+            width: 100%;
+        }
+    }
+
+    /*GALERIA B*/
+
+    .proyectosColon{
+        grid-area: ga2;
+        display: grid;
+        grid-template-rows: 50px 400px;
+        grid-template-columns: 100%;
+        grid-template-areas: "title2"
+                              "img2";
+        justify-content: center;
+
+        .leyendaColon{
+            grid-area: title2;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            color: black;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 20px;
+            border-bottom: solid 2px black;
+        }    
+        .imagenesColon{
+            grid-area: img2;
+            width: 100%;
+        }
+    }
+
+    /*GALERIA C*/
+
+    .proyectosDedalo{
+        grid-area: ga3;
+        display: grid;
+        grid-template-rows: 50px 400px;
+        grid-template-columns: 100%;
+        grid-template-areas: "title3"
+                              "img3";
+        justify-content: center;
+
+        .leyendaDedalo{
+            grid-area: title3;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            color: black;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 20px;
+            border-bottom: solid 2px black;
+        }    
+        .imagenesDedalo{
+            grid-area: img3;
+            width: 100%;
+        }
+    }
+
+    /*GALERIA D*/
+
+    .proyectosLangostinos{
+        grid-area: ga4;
+        display: grid;
+        grid-template-rows: 50px 400px;
+        grid-template-columns: 100%;
+        grid-template-areas: "title4"
+                              "img4";
+        justify-content: center;
+
+        .leyendaLangostinos{
+            grid-area: title4;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            color: black;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 20px;
+            border-bottom: solid 2px black;
+        }   
+        .imagenesLangostinos{
+            grid-area: img4;
+            width: 100%;
+        }
+    }
+}

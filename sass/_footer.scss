@@ -1,0 +1,83 @@
+.footer {
+    opacity: 0.8;
+    background-color: rgb(51, 102, 153);
+    height: 180px;
+
+    .logoVirafooter {
+        width: 170px;
+        height: 100px;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    .redesSociales {
+        text-align: left;
+        height: 100px;
+        width: 200px;
+        position: relative;
+        top: 25px;
+        margin: auto;
+        display: inline-block;
+        left: 300px;
+        border-top: solid 3px white;
+        border-bottom: solid 3px white;
+
+        .leyendaRedes {
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            font-style: normal;
+            margin-top: 10px;
+        }
+
+        .cajaInstagram {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            padding-top: 5px;
+
+            .logoInstagram {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            
+            }
+            
+            .enlaceInstagram {
+                margin-left: 10px;
+                font-style: normal;
+                color: white;
+                display: inline-block;
+            }
+        }
+        .cajaFacebook {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            padding-top: 5px;
+
+            .logoFacebook {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            
+            .enlaceFacebook {
+                margin-left: 10px;
+                font-style: normal;
+                color: white;
+                display: inline-block;
+            }
+        }
+    }
+    .leyendaFooter {
+        font-style: normal;
+        color: white;
+        height: 20px;
+        font-size: 10px;
+        text-align: right;
+        position: relative;
+        right: 40px;
+        bottom: -50px;
+    }
+}

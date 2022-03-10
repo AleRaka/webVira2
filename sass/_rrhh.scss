@@ -1,0 +1,81 @@
+
+
+    /*RRHH*/
+
+.tituloTrabajo{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(51, 102, 153);
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+}
+.leyendaTrabajo{
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(97, 133, 193);
+    font-style: oblique;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+/*RRHH FORM*/
+
+.formCaja {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    .formEmpleo {
+        opacity: 0.6;
+        margin: auto;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 30px 30px 30px 30px 50px 30px;
+        grid-template-areas: "area1 area2 area2"
+                             "area3 area2 area2"
+                             "area4 area2 area2"
+                             "area5 area2 area2"
+                             "area6 area7 area9"
+                             "area8 area8 area8";
+
+        .nombreEmpleo {
+            grid-area: area1;
+            border: 0.5px solid black;
+        }                   
+        .emailEmpleo {
+            grid-area: area3;
+            border: 0.5px solid black;
+        }                   
+        .edadEmpleo {
+            grid-area: area4;
+            border: 0.5px solid black;
+        }                    
+        .estudiosEmpleo {
+            grid-area: area5;
+            border: 0.5px solid black;
+        }                    
+        .preguntaEmpleo {
+            grid-area: area6;
+            border: 0.5px solid black;
+        }                    
+        .si {
+            grid-area: area7;
+                            
+        }
+        .no{
+            grid-area: area9;
+        }
+        .mensajeEmpleo {
+            grid-area: area2;
+            border: 0.5px solid black;
+        }
+        .enviarEmpleo {
+            grid-area: area8;
+            border: 0.5px solid black;
+        }                      
+    }
+}

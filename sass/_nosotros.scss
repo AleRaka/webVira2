@@ -1,0 +1,167 @@
+
+
+    /* MAIN */
+
+.logoVira {
+    height: 200px;
+    width: 270px;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+.tituloAcercade {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(51, 102, 153);
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+}
+.somosunaEmpresa {
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(97, 133, 193);
+    font-style: oblique;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+    /*INDEX A*/
+
+.indexA{
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 8% 30% 4% 50% 8%;
+    grid-template-areas: ". ia2 . ia4 .";
+
+    .cajaMision{
+        width: 100%;
+        height: 300px;
+        grid-area: ia2;
+
+        .misionVira{
+            text-align: left;
+            color: rgb(51, 102, 153);
+            font-style: normal;
+            font-size: 20px;
+            height: 50px;
+            border-top: solid 5px rgb(51, 102, 153);
+        }
+        .proporcionarEl{
+            text-align: left;
+            color: rgb(97, 133, 193);
+            font-style: normal;
+            font-size: 17px;
+            height: 240px;
+            border-bottom: solid 5px rgb(97, 133, 193);
+        }
+    }
+
+    .estamosEspecialmente {
+        background-color: rgb(51, 102, 153);
+        color: white;
+        column-count: 2;
+        column-gap: 5%;
+        text-align: left;
+        height: 80%;
+        width: 91%;
+        grid-area: ia4;
+        padding: 30px;
+        font-size: 15px;
+    }
+}
+.nuestrasAreas{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(51, 102, 153);
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+}
+
+    /*INDEX B*/
+
+.indexB{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 50% 40%;
+    grid-template-areas: "ib2 ib3";
+    justify-content: center;
+
+    .cajaTecnica{
+        width: 100%;
+        height: 300px;
+        grid-area: ib2;
+        background-color: rgb(228, 228, 228);
+
+        .oficinaTecnica{
+            padding-left: 55px;
+            text-align: left;
+            color: rgb(51, 102, 153);
+            font-style: normal;
+            font-size: 20px;
+            height: 50px;
+        }    
+        .leyendaOficina{
+            text-align: left;
+            color: rgb(97, 133, 193);
+            font-style: normal;
+            font-size: 20px;
+            height: 250px;
+            padding: 30px 55px 30px 55px;
+            grid-area: ib2;
+        }
+    }
+
+    .oficinaTecnicaimg{
+        grid-area: ib3;
+        height: 100%;
+    }
+}
+
+    /*INDEX C*/
+
+.indexC{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 50% 40%;
+    grid-template-areas: "ic2 ic3";
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .cajaObra{
+        width: 100%;
+        height: 400px;
+        grid-area: ic2;
+        background-color: rgb(228, 228, 228);
+
+        .leyendaObra{
+            text-align: left;
+            color: rgb(97, 133, 193);
+            font-style: normal;
+            font-size: 20px;
+            height: 300px;
+            padding: 30px 55px 30px 55px;
+            grid-area: ic2;
+        }   
+        .ejecucionObraimg{
+            grid-area: ic3;
+            height: 100%;
+        }
+    }
+            
+    .ejecucionObra{
+        padding-left: 55px;
+        text-align: left;
+        color: rgb(51, 102, 153);
+        font-style: normal;
+        font-size: 20px;
+        height: 50px;
+    }
+}

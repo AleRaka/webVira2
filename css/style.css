@@ -1,100 +1,77 @@
-    /* RESET */
-
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
-    font-family: 'Mukta', sans-serif;
-}
-
-    /* HEADER*/
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Mukta', sans-serif; }
 
 .obraFondoimagen {
-    width: 100%;
-    opacity: 0.8;
-    height: 300px;
-}
+  width: 100%;
+  opacity: 0.8;
+  height: 300px; }
 
 .navegacionFondocaja {
-    opacity: 0.8;
-    background-color: rgb(51, 102, 153);
-    top: 0px;
-    position: absolute;
-    width: 100%;
-    height: 170px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.logoVirablanco {
+  opacity: 0.8;
+  background-color: #336699;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .navegacionFondocaja .logoVirablanco {
     position: absolute;
     left: 15px;
     top: 25px;
     width: 170px;
     height: 100px;
-    display: inline-block;
-}  
-
-nav{
+    display: inline-block; }
+  .navegacionFondocaja nav {
     margin-right: 15px;
     margin-bottom: 15px;
-    display: inline-block;
-}
+    display: inline-block; }
+    .navegacionFondocaja nav li {
+      width: 130px;
+      display: inline-block;
+      text-align: center; }
+      .navegacionFondocaja nav li .navegador {
+        font-size: 15px;
+        color: white;
+        font-style: normal;
+        transition: 0.5s all; }
 
-li {
-    width: 130px;
-    display: inline-block;
-    text-align: center;
-}
-
-.navegador{
-    font-size: 15px;
+.teAcompañamoscaja {
+  background-color: #6185c1;
+  opacity: 0.8;
+  height: 40px;
+  width: 290px;
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .teAcompañamoscaja .teAcompañamos {
     color: white;
     font-style: normal;
-    transition: 0.5s all;
-}
-
-.teAcompañamoscaja{
-    background-color: rgb(97, 133, 193);
-    opacity: 0.8;
-    height: 40px;
-    width: 290px;
-    position: absolute;
-    top: 230px;
-    left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.teAcompañamos {
-    color: white;
-    font-style: normal;
-    font-size: 14px;
-}
-
-    /*FOOTER*/
+    font-size: 14px; }
 
 .footer {
-    opacity: 0.8;
-    background-color: rgb(51, 102, 153);
-    height: 180px;
-}
-
-.logoVirafooter {
+  opacity: 0.8;
+  background-color: #336699;
+  height: 180px; }
+  .footer .logoVirafooter {
     width: 170px;
     height: 100px;
     position: absolute;
     margin-left: 20px;
-    margin-top: 25px;
-}
-
-.redesSociales {
+    margin-top: 25px; }
+  .footer .redesSociales {
     text-align: left;
     height: 100px;
     width: 200px;
@@ -104,59 +81,42 @@ li {
     display: inline-block;
     left: 300px;
     border-top: solid 3px white;
-    border-bottom: solid 3px white;
-}
-
-.leyendaRedes {
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-    font-style: normal;
-    margin-top: 10px;
-}
-
-.cajaInstagram {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    padding-top: 5px;
-}
-
-.logoInstagram {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-
-}
-
-.enlaceInstagram {
-    margin-left: 10px;
-    font-style: normal;
-    color: white;
-    display: inline-block;
-}
-
-.cajaFacebook {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    padding-top: 5px;
-}
-
-.logoFacebook {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-}
-
-.enlaceFacebook {
-    margin-left: 10px;
-    font-style: normal;
-    color: white;
-    display: inline-block;
-}
-
-.leyendaFooter {
+    border-bottom: solid 3px white; }
+    .footer .redesSociales .leyendaRedes {
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+      font-style: normal;
+      margin-top: 10px; }
+    .footer .redesSociales .cajaInstagram {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      padding-top: 5px; }
+      .footer .redesSociales .cajaInstagram .logoInstagram {
+        width: 20px;
+        height: 20px;
+        display: inline-block; }
+      .footer .redesSociales .cajaInstagram .enlaceInstagram {
+        margin-left: 10px;
+        font-style: normal;
+        color: white;
+        display: inline-block; }
+    .footer .redesSociales .cajaFacebook {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      padding-top: 5px; }
+      .footer .redesSociales .cajaFacebook .logoFacebook {
+        width: 20px;
+        height: 20px;
+        display: inline-block; }
+      .footer .redesSociales .cajaFacebook .enlaceFacebook {
+        margin-left: 10px;
+        font-style: normal;
+        color: white;
+        display: inline-block; }
+  .footer .leyendaFooter {
     font-style: normal;
     color: white;
     height: 20px;
@@ -164,85 +124,62 @@ li {
     text-align: right;
     position: relative;
     right: 40px;
-    bottom: -50px;
-}
+    bottom: -50px; }
 
-    /*INDEX MAIN*/
-
+/* MAIN */
 .logoVira {
-    height: 200px;
-    width: 270px;
-    margin: auto;
-    position: relative;
-    display: block;
-}
+  height: 200px;
+  width: 270px;
+  margin: auto;
+  position: relative;
+  display: block; }
 
 .tituloAcercade {
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
 
 .somosunaEmpresa {
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(97, 133, 193);
-    font-style: oblique;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 50%;
-    margin: auto;
-}
-.nuestrasAreas{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
+  font-style: normal;
+  font-size: 18px;
+  color: #6185c1;
+  font-style: oblique;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: auto; }
 
-    /*INDEX A*/
-
-.indexA{
-    margin-top: 80px;
-    display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: 8% 30% 4% 50% 8%;
-    grid-template-areas: ". ia2 . ia4 .";
-}
-
-.cajaMision{
+/*INDEX A*/
+.indexA {
+  margin-top: 80px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 8% 30% 4% 50% 8%;
+  grid-template-areas: ". ia2 . ia4 ."; }
+  .indexA .cajaMision {
     width: 100%;
     height: 300px;
-    grid-area: ia2;
-}
-
-.misionVira{
-    text-align: left;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-    border-top: solid 5px rgb(51, 102, 153);
-}
-
-.proporcionarEl{
-    text-align: left;
-    color: rgb(97, 133, 193);
-    font-style: normal;
-    font-size: 17px;
-    height: 240px;
-    border-bottom: solid 5px rgb(97, 133, 193);
-}
-
-.estamosEspecialmente {
-    background-color: rgb(51, 102, 153);
+    grid-area: ia2; }
+    .indexA .cajaMision .misionVira {
+      text-align: left;
+      color: #336699;
+      font-style: normal;
+      font-size: 20px;
+      height: 50px;
+      border-top: solid 5px #336699; }
+    .indexA .cajaMision .proporcionarEl {
+      text-align: left;
+      color: #6185c1;
+      font-style: normal;
+      font-size: 17px;
+      height: 240px;
+      border-bottom: solid 5px #6185c1; }
+  .indexA .estamosEspecialmente {
+    background-color: #336699;
     color: white;
     column-count: 2;
     column-gap: 5%;
@@ -251,997 +188,612 @@ li {
     width: 91%;
     grid-area: ia4;
     padding: 30px;
-    font-size: 15px;
-}
-    /*INDEX B*/
+    font-size: 15px; }
 
-.indexB{
+.nuestrasAreas {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+/*INDEX B*/
+.indexB {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "ib2 ib3";
+  justify-content: center; }
+  .indexB .cajaTecnica {
+    width: 100%;
+    height: 300px;
+    grid-area: ib2;
+    background-color: #e4e4e4; }
+    .indexB .cajaTecnica .oficinaTecnica {
+      padding-left: 55px;
+      text-align: left;
+      color: #336699;
+      font-style: normal;
+      font-size: 20px;
+      height: 50px; }
+    .indexB .cajaTecnica .leyendaOficina {
+      text-align: left;
+      color: #6185c1;
+      font-style: normal;
+      font-size: 20px;
+      height: 250px;
+      padding: 30px 55px 30px 55px;
+      grid-area: ib2; }
+  .indexB .oficinaTecnicaimg {
+    grid-area: ib3;
+    height: 100%; }
+
+/*INDEX C*/
+.indexC {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "ic2 ic3";
+  justify-content: center;
+  margin-bottom: 50px; }
+  .indexC .cajaObra {
+    width: 100%;
+    height: 400px;
+    grid-area: ic2;
+    background-color: #e4e4e4; }
+    .indexC .cajaObra .leyendaObra {
+      text-align: left;
+      color: #6185c1;
+      font-style: normal;
+      font-size: 20px;
+      height: 300px;
+      padding: 30px 55px 30px 55px;
+      grid-area: ic2; }
+    .indexC .cajaObra .ejecucionObraimg {
+      grid-area: ic3;
+      height: 100%; }
+  .indexC .ejecucionObra {
+    padding-left: 55px;
+    text-align: left;
+    color: #336699;
+    font-style: normal;
+    font-size: 20px;
+    height: 50px; }
+
+/*MAIN*/
+.tituloServicios {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+/*SERVICIOS A*/
+.serviciosA {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 40% 50%;
+  grid-template-areas: "sa2 sa3";
+  justify-content: center;
+  margin-bottom: 50px; }
+  .serviciosA .imagenResidenciales {
+    grid-area: sa2;
+    height: 100%; }
+  .serviciosA .cajaResidenciales {
+    width: 100%;
+    height: 400px;
+    grid-area: sa3;
+    background-color: #aaaaaa; }
+    .serviciosA .cajaResidenciales .tituloResidenciales {
+      padding-top: 30px;
+      text-align: center;
+      color: white;
+      font-style: normal;
+      font-size: 20px;
+      height: 50px;
+      border-bottom: solid 5px white; }
+    .serviciosA .cajaResidenciales .leyendaResidenciales {
+      text-align: left;
+      color: white;
+      font-style: normal;
+      font-size: 18px;
+      height: 300px;
+      padding: 30px 55px 30px 55px;
+      grid-area: sa3; }
+
+/*SERVICIOS B*/
+.serviciosB {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 40% 50%;
+  grid-template-areas: "sa3 sa2";
+  justify-content: center;
+  margin-bottom: 50px; }
+  .serviciosB .imagenDesarrollos {
+    grid-area: sa3;
+    height: 100%; }
+  .serviciosB .cajaDesarrollos {
+    width: 100%;
+    height: 400px;
+    grid-area: sa2;
+    background-color: #aaaaaa; }
+    .serviciosB .cajaDesarrollos .tituloDesarrollos {
+      padding-top: 30px;
+      text-align: center;
+      color: white;
+      font-style: normal;
+      font-size: 20px;
+      height: 50px;
+      border-bottom: solid 5px white; }
+    .serviciosB .cajaDesarrollos .leyendaDesarrollos {
+      text-align: left;
+      color: white;
+      font-style: normal;
+      font-size: 18px;
+      height: 300px;
+      padding: 30px 55px 30px 55px;
+      grid-area: sa2; }
+
+/*CONTACTO MAIN*/
+.tituloContacto {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+.tituloEncontranos {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+/*CONTACTO FORM*/
+.formContacto {
+  opacity: 0.6;
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 50px 50px 50px 30px;
+  grid-template-areas: "area1 area2" "area3 area2" "area4 area2" "area5 area2" "area6 area6"; }
+
+.nombre {
+  grid-area: area1;
+  border: 0.5px solid black; }
+
+.email {
+  grid-area: area3;
+  border: 0.5px solid black; }
+
+.empresa {
+  grid-area: area4;
+  border: 0.5px solid black; }
+
+.telefono {
+  grid-area: area5;
+  border: 0.5px solid black; }
+
+.mensaje {
+  grid-area: area2;
+  border: 0.5px solid black; }
+
+.enviar {
+  grid-area: area6;
+  border: 0.5px solid black; }
+
+/*UBICACION CONTACTO*/
+.cajaUbicacion {
+  text-align: center;
+  margin: auto;
+  display: grid;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 20px auto 20px;
+  grid-template-areas: ".    .      ." ". ubicacion ." ".    .      ."; }
+
+.ubicacion {
+  grid-area: ubicacion;
+  width: 100%; }
+
+/*RRHH*/
+.tituloTrabajo {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+.leyendaTrabajo {
+  font-style: normal;
+  font-size: 18px;
+  color: #6185c1;
+  font-style: oblique;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: auto; }
+
+/*RRHH FORM*/
+.formCaja {
+  margin-top: 50px;
+  margin-bottom: 200px; }
+
+.formEmpleo {
+  opacity: 0.6;
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 30px 30px 30px 30px 50px 30px;
+  grid-template-areas: "area1 area2 area2" "area3 area2 area2" "area4 area2 area2" "area5 area2 area2" "area6 area7 area9" "area8 area8 area8"; }
+
+.nombreEmpleo {
+  grid-area: area1;
+  border: 0.5px solid black; }
+
+.emailEmpleo {
+  grid-area: area3;
+  border: 0.5px solid black; }
+
+.edadEmpleo {
+  grid-area: area4;
+  border: 0.5px solid black; }
+
+.estudiosEmpleo {
+  grid-area: area5;
+  border: 0.5px solid black; }
+
+.preguntaEmpleo {
+  grid-area: area6;
+  border: 0.5px solid black; }
+
+.si {
+  grid-area: area7; }
+
+.no {
+  grid-area: area9; }
+
+.mensajeEmpleo {
+  grid-area: area2;
+  border: 0.5px solid black; }
+
+.enviarEmpleo {
+  grid-area: area8;
+  border: 0.5px solid black; }
+
+@media screen and (max-width: 1250px) {
+  /*MEDIA INDEX A*/
+  .indexA {
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: ". ia2 ." ". ia4 ."; }
+  .proporcionarEl {
+    margin-top: 0px;
+    height: 200px;
+    width: 100%; }
+  .estamosEspecialmente {
+    margin-top: 0px;
+    font-size: 13px;
+    width: 95%; }
+  /*MEDIA INDEX B*/
+  .indexB {
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 50% 40%;
     grid-template-areas: "ib2 ib3";
-    justify-content: center;
-}
-
-.cajaTecnica{
+    justify-content: center; }
+  .cajaTecnica {
     width: 100%;
     height: 300px;
     grid-area: ib2;
-    background-color: rgb(228, 228, 228);
-}
-    
-.oficinaTecnica{
-    padding-left: 55px;
+    background-color: #e4e4e4; }
+  .leyendaOficina {
     text-align: left;
-    color: rgb(51, 102, 153);
+    color: #6185c1;
     font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-    
-.leyendaOficina{
-    text-align: left;
-    color: rgb(97, 133, 193);
-    font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     height: 250px;
-    padding: 30px 55px 30px 55px;
-    grid-area: ib2;
-}
-
-.oficinaTecnicaimg{
+    padding: 15px 15px 15px 15px;
+    grid-area: ib2; }
+  .oficinaTecnicaimg {
     grid-area: ib3;
-    height: 100%;
-}
-
-    /*INDEX C*/
-
-.indexC{
-    margin-top: 50px;
+    height: 100%; }
+  /*MEDIA INDEX C*/
+  .indexC {
     display: grid;
-    grid-template-rows: 400px;
+    grid-template-rows: 300px;
     grid-template-columns: 50% 40%;
     grid-template-areas: "ic2 ic3";
-    justify-content: center;
-    margin-bottom: 50px;
-}
-    
-.cajaObra{
+    justify-content: center; }
+  .cajaObra {
     width: 100%;
-    height: 400px;
-    grid-area: ic2;
-    background-color: rgb(228, 228, 228);
-}
-        
-.ejecucionObra{
-    padding-left: 55px;
-    text-align: left;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-        
-.leyendaObra{
-    text-align: left;
-    color: rgb(97, 133, 193);
-    font-style: normal;
-    font-size: 20px;
     height: 300px;
-    padding: 30px 55px 30px 55px;
     grid-area: ic2;
-}
-    
-.ejecucionObraimg{
+    background-color: #e4e4e4; }
+  .leyendaObra {
+    text-align: left;
+    color: #6185c1;
+    font-style: normal;
+    font-size: 18px;
+    height: 250px;
+    padding: 15px 15px 15px 15px;
+    grid-area: ic2; }
+  .ejecucionObraimg {
     grid-area: ic3;
-    height: 100%;
-}
+    height: 100%; }
+  /*MEDIA SERVICIOS A*/
+  .tituloResidenciales {
+    font-size: 17px; }
+  .leyendaResidenciales {
+    font-size: 16px;
+    padding: 10px 20px 10px 20px; }
+  .tituloDesarrollos {
+    font-size: 17px; }
+  .leyendaDesarrollos {
+    font-size: 16px;
+    padding: 10px 20px 10px 20px; } }
 
-    /*SERVICIOS MAIN*/
-
-.tituloServicios{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-
-    /*SERVICIOS A*/
-
-.serviciosA{
-    margin-top: 50px;
+@media screen and (max-width: 992px) {
+  /*MEDIA HEADER*/
+  li {
+    width: 100px; }
+  .somosunaEmpresa {
+    width: 70%; }
+  /*MEDIA INDEX A*/
+  .indexA {
+    grid-template-columns: 10% 80% 10%; }
+  /*MEDIA INDEX B*/
+  .indexB {
     display: grid;
-    grid-template-rows: 400px;
-    grid-template-columns: 40% 50%;
-    grid-template-areas: "sa2 sa3";
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.imagenResidenciales{
-    grid-area: sa2;
-    height: 100%;
-}
-
-.cajaResidenciales{
-    width: 100%;
-    height: 400px;
-    grid-area: sa3;
-    background-color: rgb(170, 170, 170);
-}
-
-.tituloResidenciales{
-    padding-top: 30px;
-    text-align: center;
-    color: white;
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-    border-bottom: solid 5px white;
-}
-     
-.leyendaResidenciales{
+    grid-template-rows: 255px;
+    grid-template-columns: 5% 40% 35% 20%;
+    grid-template-areas: ". ib2 ib3 .";
+    justify-content: center; }
+  .oficinaTecnica {
+    padding-left: 15px;
     text-align: left;
-    color: white;
-    font-style: normal;
-    font-size: 18px;
-    height: 300px;
-    padding: 30px 55px 30px 55px;
-    grid-area: sa3;
-}
-
-    /*SERVICIOS B*/
-
-.serviciosB{
-    margin-top: 50px;
-    display: grid;
-    grid-template-rows: 400px;
-    grid-template-columns: 40% 50%;
-    grid-template-areas: "sa3 sa2";
-    justify-content: center;
-    margin-bottom: 50px;
-}
-    
-.imagenDesarrollos{
-    grid-area: sa3;
-    height: 100%;
-}
-    
-.cajaDesarrollos{
+    font-size: 15px;
+    height: 20px; }
+  .cajaTecnica {
     width: 100%;
-    height: 400px;
-    grid-area: sa2;
-    background-color: rgb(170, 170, 170);
-}
-    
-.tituloDesarrollos{
-    padding-top: 30px;
-    text-align: center;
-    color: white;
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-    border-bottom: solid 5px white;
-}
-         
-.leyendaDesarrollos{
-    text-align: left;
-    color: white;
-    font-style: normal;
-    font-size: 18px;
-    height: 300px;
-    padding: 30px 55px 30px 55px;
-    grid-area: sa2;
-}
-
-    /*GALERIA MAIN*/
-
-.tituloGaleria{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-
-
-    /*GALERIA*/
-
-.galeria{
-    display: grid;
-    grid-template-rows: 450px 50px 450px 50px;
-    grid-template-columns: 6.5% 40% 6.5% 40% 6.5%;
-    grid-template-areas: ". ga1 . ga2 . "
-                         ".  .  .  .  . "
-                         ". ga3 . ga4 . "
-                         ".  .  .  .  . ";
-    justify-content: center;
-}
-
-    /*GALERIA A*/
-
-.proyectosNexus{
-    grid-area: ga1;
-    display: grid;
-    grid-template-rows: 50px 400px;
-    grid-template-columns: 100%;
-    grid-template-areas: "title1"
-                          "img1";
-    justify-content: center;
-}
-
-.leyendaNexus{
-    grid-area: title1;
+    height: 255px;
+    grid-area: ib2; }
+  .leyendaOficina {
+    font-size: 13px;
+    height: 230px;
+    padding: 15px 15px 15px 15px;
+    grid-area: ib2; }
+  .oficinaTecnicaimg {
+    grid-area: ib3;
+    height: 100%; }
+  /*MEDIA INDEX C*/
+  .indexC {
+    grid-template-rows: 255px;
+    grid-template-columns: 5% 40% 35% 20%;
+    grid-template-areas: ". ic2 ic3 ."; }
+  .ejecucionObra {
+    padding-left: 15px;
+    font-size: 15px;
+    height: 20px; }
+  .cajaObra {
     width: 100%;
-    height: 30px;
-    text-align: center;
-    color: black;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    border-bottom: solid 2px black;
-}
+    height: 255px;
+    grid-area: ic2; }
+  .leyendaObra {
+    font-size: 13px;
+    height: 230px;
+    padding: 15px 15px 15px 15px;
+    grid-area: ic2; }
+  .ejecucionObraimg {
+    grid-area: ic3;
+    height: 100%; } }
 
-.imagenesNexus{
-    grid-area: img1;
-    width: 100%;
-}
-
-    /*GALERIA B*/
-
-.proyectosColon{
-    grid-area: ga2;
+@media screen and (max-width: 750px) {
+  /*MEDIA INDEX A*/
+  .indexA {
+    margin-top: 80px;
     display: grid;
-    grid-template-rows: 50px 400px;
-    grid-template-columns: 100%;
-    grid-template-areas: "title2"
-                          "img2";
-    justify-content: center;
-}
-    
-.leyendaColon{
-    grid-area: title2;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    color: black;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    border-bottom: solid 2px black;
-}
-    
-.imagenesColon{
-    grid-area: img2;
-    width: 100%;
-}
-
-    /*GALERIA C*/
-
-.proyectosDedalo{
-    grid-area: ga3;
-    display: grid;
-    grid-template-rows: 50px 400px;
-    grid-template-columns: 100%;
-    grid-template-areas: "title3"
-                          "img3";
-    justify-content: center;
-}
-    
-.leyendaDedalo{
-    grid-area: title3;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    color: black;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    border-bottom: solid 2px black;
-}
-    
-.imagenesDedalo{
-    grid-area: img3;
-    width: 100%;
-}
-
-    /*GALERIA D*/
-
-.proyectosLangostinos{
-    grid-area: ga4;
-    display: grid;
-    grid-template-rows: 50px 400px;
-    grid-template-columns: 100%;
-    grid-template-areas: "title4"
-                          "img4";
-    justify-content: center;
-}
-    
-.leyendaLangostinos{
-    grid-area: title4;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    color: black;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    border-bottom: solid 2px black;
-}
-    
-.imagenesLangostinos{
-    grid-area: img4;
-    width: 100%;
-}
-
-
-/*CONTACTO MAIN*/
-
-.tituloContacto{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-
-.tituloEncontranos{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-
-/*CONTACTO FORM*/
-
-.formContacto {
-    opacity: 0.6;
-    margin: auto;
-    width: 60%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 50px 50px 50px 30px;
-    grid-template-areas: "area1 area2"
-                         "area3 area2"
-                         "area4 area2"
-                         "area5 area2"
-                         "area6 area6";
-
-}
-.nombre {
-    grid-area: area1;
-    border: 0.5px solid black;
- }
-
-.email {
-    grid-area: area3;
-    border: 0.5px solid black;
- }
-
-.empresa {
-     grid-area: area4;
-    border: 0.5px solid black;
- }
-
-.telefono {
-    grid-area: area5;
-    border: 0.5px solid black;
- }
-
-.mensaje {
-    grid-area: area2;
-    border: 0.5px solid black;
-}
-
-.enviar {
-    grid-area: area6;
-    border: 0.5px solid black;
-}
-
-/*UBICACION CONTACTO*/
-
-.cajaUbicacion{
-    text-align: center;
-    margin: auto;
-    display: grid;
-    width: 60%;
-    display: grid;
+    grid-template-rows: 300px 350px;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "ia1 ia2 ia3" "ia1 ia4 ia3"; }
+  .estamosEspecialmente {
+    padding: 10px;
+    width: 95%;
+    height: 350px; }
+  /*MEDIA SERVICIOS A*/
+  .leyendaResidenciales {
+    padding: 15px 15px 15px 15px;
+    font-size: 15px; }
+  .leyendaDesarrollos {
+    padding: 15px 15px 15px 15px;
+    font-size: 15px; }
+  /*GALERIA*/
+  .galeria {
+    grid-template-rows: 450px 50px 450px 50px 450px 50px 450px 50px;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 20px auto 20px;
-    grid-template-areas: ".    .      ."
-                         ". ubicacion ."
-                         ".    .      .";
-}
-.ubicacion {
-    grid-area: ubicacion;
-    width: 100%;
-}
+    grid-template-areas: ". ga1 ." ".  .  ." ". ga2 ." ".  .  ." ". ga3 ." ".  .  ." ". ga4 ." ".  .  ."; } }
 
-/*RRHH*/
-
-.tituloTrabajo{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(51, 102, 153);
-    font-style: normal;
-    font-size: 20px;
-    height: 50px;
-}
-
-.leyendaTrabajo{
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(97, 133, 193);
-    font-style: oblique;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 50%;
-    margin: auto;
-}
-
-/*RRHH FORM*/
-
-.formCaja {
-    margin-top: 50px;
-    margin-bottom: 200px;
-}
-.formEmpleo {
-    opacity: 0.6;
-    margin: auto;
-    width: 60%;
+@media screen and (max-width: 600px) {
+  /*MEDIA HEADER*/
+  li {
+    width: 80px; }
+  /*MEDIA FOOTER*/
+  .redesSociales {
+    left: 230px; }
+  .leyendaFooter {
+    font-size: 8px; }
+  /*MEDIA INDEX A*/
+  .indexA {
+    grid-template-rows: 400px; }
+  .proporcionarEl {
+    height: 250px; }
+  /*MEDIA INDEX B*/
+  .indexB {
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 30px 30px 30px 30px 50px 30px;
-    grid-template-areas: "area1 area2 area2"
-                         "area3 area2 area2"
-                         "area4 area2 area2"
-                         "area5 area2 area2"
-                         "area6 area7 area9"
-                         "area8 area8 area8";
-}
-
-.nombreEmpleo {
-    grid-area: area1;
-    border: 0.5px solid black;
- }
-
-.emailEmpleo {
-    grid-area: area3;
-    border: 0.5px solid black;
- }
-
-.edadEmpleo {
-    grid-area: area4;
-    border: 0.5px solid black;
- }
-
-.estudiosEmpleo {
-    grid-area: area5;
-    border: 0.5px solid black;
- }
-
-.preguntaEmpleo {
-    grid-area: area6;
-    border: 0.5px solid black;
-}
-
-.si {
-    grid-area: area7;
-
-}
-.no{
-    grid-area: area9;
-
-}
-.mensajeEmpleo {
-    grid-area: area2;
-    border: 0.5px solid black;
-}
-
-.enviarEmpleo {
-    grid-area: area8;
-    border: 0.5px solid black;
-}
-
-
-@media screen and (max-width: 1250px){
-    
-    /*MEDIA INDEX A*/
-
-    .indexA{
-        margin-top: 80px;
-        display: grid;
-        grid-template-rows: 300px 300px;
-        grid-template-columns: 15% 70% 15%;
-        grid-template-areas: ". ia2 ."
-                             ". ia4 .";
-    }
-    .proporcionarEl{
-        margin-top: 0px;
-        height: 200px;
-        width: 100%;
-    }
-    .estamosEspecialmente {
-        margin-top: 0px;
-        font-size: 13px;
-        width: 95%;
-    }
-
-    /*MEDIA INDEX B*/
-  
-    .indexB{
-        display: grid;
-        grid-template-rows: 300px;
-        grid-template-columns: 50% 40%;
-        grid-template-areas: "ib2 ib3";
-        justify-content: center;
-    }
-
-    .cajaTecnica{
-        width: 100%;
-        height: 300px;
-        grid-area: ib2;
-        background-color: rgb(228, 228, 228);
-    }
-
-    .leyendaOficina{
-        text-align: left;
-        color: rgb(97, 133, 193);
-        font-style: normal;
-        font-size: 18px;
-        height: 250px;
-        padding: 15px 15px 15px 15px;
-        grid-area: ib2;
-    }
-    
-    .oficinaTecnicaimg{
-        grid-area: ib3;
-        height: 100%;
-    }
-
-    /*MEDIA INDEX C*/
-
-    .indexC{
-        display: grid;
-        grid-template-rows: 300px;
-        grid-template-columns: 50% 40%;
-        grid-template-areas: "ic2 ic3";
-        justify-content: center;
-    }
-    .cajaObra{
-        width: 100%;
-        height: 300px;
-        grid-area: ic2;
-        background-color: rgb(228, 228, 228);
-    }
-
-    .leyendaObra{
-        text-align: left;
-        color: rgb(97, 133, 193);
-        font-style: normal;
-        font-size: 18px;
-        height: 250px;
-        padding: 15px 15px 15px 15px;
-        grid-area: ic2;
-    }
-    .ejecucionObraimg{
-        grid-area: ic3;
-        height: 100%;
-    }
-    
-    /*MEDIA SERVICIOS A*/
-
-    .tituloResidenciales{
-        font-size: 17px;
-    }
-
-    .leyendaResidenciales{
-        font-size: 16px;
-        padding: 10px 20px 10px 20px;
-    }
-
-    .tituloDesarrollos{
-        font-size: 17px;
-    }
-
-    .leyendaDesarrollos{
-        font-size: 16px;
-        padding: 10px 20px 10px 20px;
-    }
-}
-
-@media screen and (max-width: 992px){
-
-    /*MEDIA HEADER*/
-
-    li {
-        width: 100px;
-    }
-
-    .somosunaEmpresa{
-        width: 70%;
-    }
-    
-    /*MEDIA INDEX A*/
-
-    .indexA{
-        grid-template-columns: 10% 80% 10%;
-    }
-
-    /*MEDIA INDEX B*/
-  
-    .indexB{
-        display: grid;
-        grid-template-rows: 255px;
-        grid-template-columns: 5% 40% 35% 20%;
-        grid-template-areas: ". ib2 ib3 .";
-        justify-content: center;
-    }
-
-    .oficinaTecnica{
-        padding-left: 15px;
-        text-align: left;
-        font-size: 15px;
-        height: 20px;
-    }
-
-    .cajaTecnica{
-        width: 100%;
-        height: 255px;
-        grid-area: ib2;
-    }
-
-    .leyendaOficina{
-        font-size: 13px;
-        height: 230px;
-        padding: 15px 15px 15px 15px;
-        grid-area: ib2;
-    }
-    
-    .oficinaTecnicaimg{
-        grid-area: ib3;
-        height: 100%;
-    } 
-
-    /*MEDIA INDEX C*/
-
-    .indexC{
-        grid-template-rows: 255px;
-        grid-template-columns: 5% 40% 35% 20%;
-        grid-template-areas: ". ic2 ic3 .";
-    }
-
-    .ejecucionObra{
-        padding-left: 15px;
-        font-size: 15px;
-        height: 20px;
-    }
-
-    .cajaObra{
-        width: 100%;
-        height: 255px;
-        grid-area: ic2;
-    }
-
-    .leyendaObra{
-        font-size: 13px;
-        height: 230px;
-        padding: 15px 15px 15px 15px;
-        grid-area: ic2;
-    }
-    .ejecucionObraimg{
-        grid-area: ic3;
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 750px){
-
-    /*MEDIA INDEX A*/
-
-    .indexA{
-        margin-top: 80px;
-        display: grid;
-        grid-template-rows: 300px 350px;
-        grid-template-columns: 15% 70% 15%;
-        grid-template-areas: "ia1 ia2 ia3"
-                             "ia1 ia4 ia3";
-    }
-
-    .estamosEspecialmente{
-        padding: 10px;
-        width: 95%;
-        height: 350px;
-    }
-
-    /*MEDIA SERVICIOS A*/
-
-    .leyendaResidenciales{
-        padding: 15px 15px 15px 15px;
-        font-size: 15px;
-    }
-
-    .leyendaDesarrollos{
-        padding: 15px 15px 15px 15px;
-        font-size: 15px;
-    }
-    /*GALERIA*/
-
-    .galeria{
-        grid-template-rows: 450px 50px 450px 50px 450px 50px 450px 50px;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-areas: ". ga1 ."
-                             ".  .  ."
-                             ". ga2 ."
-                             ".  .  ."
-                             ". ga3 ."
-                             ".  .  ."
-                             ". ga4 ."
-                             ".  .  .";
-    }
-
-    
-}
-
-@media screen and (max-width: 600px){
-
-    /*MEDIA HEADER*/
-
-    li {
-        width: 80px;
-    }
-
-    /*MEDIA FOOTER*/
-
-    .redesSociales {
-        left: 230px;
-    }
-
-    .leyendaFooter {
-        font-size: 8px;
-    }
-
-    /*MEDIA INDEX A*/
-
-    .indexA{
-        grid-template-rows: 400px;
-    }
-
-    .proporcionarEl{
-        height: 250px;
-    }
-
-    /*MEDIA INDEX B*/
-  
-    .indexB{
-        display: grid;
-        grid-template-rows: 250px 250PX;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-areas: ". ib2 ."
-                             ". ib3 .";
-    }
-
-    .oficinaTecnica{
-        padding-left: 15px;
-        text-align: left;
-        font-size: 15px;
-        height: 20px;
-    }
-
-    .cajaTecnica{
-        width: 100%;
-        height: 255px;
-        grid-area: ib2;
-    }
-
-    .leyendaOficina{
-        font-size: 13px;
-        height: 230px;
-        padding: 25px 15px 15px 15px;
-        grid-area: ib2;
-    }
-    
-    .oficinaTecnicaimg{
-        grid-area: ib3;
-        width: 100%;
-    } 
-
-    /*MEDIA INDEX C*/
-
-    .indexC{
-        grid-template-rows: 250px 250PX;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-areas: ". ic2 ."
-                             ". ic3 .";
-    }
-
-    .ejecucionObra{
-        padding-left: 15px;
-        font-size: 15px;
-        height: 20px;
-    }
-
-    .cajaObra{
-        width: 100%;
-        height: 255px;
-        grid-area: ic2;
-    }
-
-    .leyendaObra{
-        font-size: 13px;
-        height: 230px;
-        padding: 25px 15px 15px 15px;
-        grid-area: ic2;
-    }
-    .ejecucionObraimg{
-        grid-area: ic3;
-        width: 100%;
-    }
-
-    /*MEDIA SERVICIOS A*/
-
-    .serviciosA{
-        grid-template-rows: 350px 300px;
-        grid-template-columns: 15% 70% 15%;
-        grid-template-areas:  ". sa3 ."
-                              ". sa2. ";
-    }
-
-    .imagenResidenciales{
-        grid-area: sa2;
-        height: auto;
-        width: 100%;
-    }
-
-    .cajaResidenciales{
-        width: 100%;
-        height: 350px;
-        grid-area: sa3;
-    }
-     
-    .leyendaResidenciales{
-        font-size: 14px;
-        height: 180px;
-        padding: 20px 20px 20px 20px;
-        grid-area: sa3;
-    }
-
-    /*SERVICIOS B*/
-
-    .serviciosB{
-        grid-template-rows: 400px 300px;
-        grid-template-columns: 15% 70% 15%;
-        grid-template-areas:  ". sa3 ."
-                              ". sa2. ";
-    }
-    
-    .imagenDesarrollos{
-        grid-area: sa2;
-        height: auto;
-        width: 100%;
-    }
-    
-    .cajaDesarrollos{
-        width: 100%;
-        height: 400px;
-        grid-area: sa3;
-    }
-      
-    .leyendaDesarrollos{
-        font-size: 14px;
-        height: 180px;
-        padding: 20px 20px 20px 20px;
-        grid-area: sa3;
-    }
-}
-
-@media screen and (max-width: 485px){
-
-    nav{
-        margin-right: 10px;
-    }
-    
-    li {
-        width: 70px;
-    }
-
-    .navegador{
-        font-size: 14px;
-    }
-    /*MEDIA INDEX A*/
-
-    .indexA{
-        grid-template-columns: 10% 80% 10%;
-    }
-
-    .estamosEspecialmente {
-        height: 400px;
-        column-count: 1;
-        column-gap: 0%;
-        
-    }
-
-    /*MEDIA FOOTER*/
-
-    .footer {
-        display: grid;
-        opacity: 0.8;
-        background-color: rgb(51, 102, 153);
-        height: 180px;
-        grid-template-rows: 70% 30%;
-        grid-template-columns: 40% 60%;
-        grid-template-areas: " logo    redes"
-                             "leyenda leyenda";
-    }
-    
-    .logoVirafooter {
-        position: static;
-        width: 90%;
-        height: auto;
-        margin: auto;
-        grid-area: logo;
-    }
-    
-    .redesSociales {
-        text-align: left;
-        width: 90%;
-        height: 100px;
-        position: static;
-        top: 0px;
-        margin: auto;
-        display: inline-block;
-        left: 0px;
-        border-top: solid 3px white;
-        border-bottom: solid 3px white;
-        grid-area: redes;
-    }
-    
-    .leyendaFooter {
-        margin-top: 10px;
-        font-style: normal;
-        color: white;
-        height: 20px;
-        font-size: 7px;
-        text-align: center;
-        position: static;
-        right: 0px;
-        bottom: 0px;
-        grid-area: leyenda;
-    }
-}
+    grid-template-rows: 250px 250PX;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". ib2 ." ". ib3 ."; }
+  .oficinaTecnica {
+    padding-left: 15px;
+    text-align: left;
+    font-size: 15px;
+    height: 20px; }
+  .cajaTecnica {
+    width: 100%;
+    height: 255px;
+    grid-area: ib2; }
+  .leyendaOficina {
+    font-size: 13px;
+    height: 230px;
+    padding: 25px 15px 15px 15px;
+    grid-area: ib2; }
+  .oficinaTecnicaimg {
+    grid-area: ib3;
+    width: 100%; }
+  /*MEDIA INDEX C*/
+  .indexC {
+    grid-template-rows: 250px 250PX;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". ic2 ." ". ic3 ."; }
+  .ejecucionObra {
+    padding-left: 15px;
+    font-size: 15px;
+    height: 20px; }
+  .cajaObra {
+    width: 100%;
+    height: 255px;
+    grid-area: ic2; }
+  .leyendaObra {
+    font-size: 13px;
+    height: 230px;
+    padding: 25px 15px 15px 15px;
+    grid-area: ic2; }
+  .ejecucionObraimg {
+    grid-area: ic3;
+    width: 100%; }
+  /*MEDIA SERVICIOS A*/
+  .serviciosA {
+    grid-template-rows: 350px 300px;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: ". sa3 ." ". sa2. "; }
+  .imagenResidenciales {
+    grid-area: sa2;
+    height: auto;
+    width: 100%; }
+  .cajaResidenciales {
+    width: 100%;
+    height: 350px;
+    grid-area: sa3; }
+  .leyendaResidenciales {
+    font-size: 14px;
+    height: 180px;
+    padding: 20px 20px 20px 20px;
+    grid-area: sa3; }
+  /*SERVICIOS B*/
+  .serviciosB {
+    grid-template-rows: 400px 300px;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: ". sa3 ." ". sa2. "; }
+  .imagenDesarrollos {
+    grid-area: sa2;
+    height: auto;
+    width: 100%; }
+  .cajaDesarrollos {
+    width: 100%;
+    height: 400px;
+    grid-area: sa3; }
+  .leyendaDesarrollos {
+    font-size: 14px;
+    height: 180px;
+    padding: 20px 20px 20px 20px;
+    grid-area: sa3; } }
+
+@media screen and (max-width: 485px) {
+  nav {
+    margin-right: 10px; }
+  li {
+    width: 70px; }
+  .navegador {
+    font-size: 14px; }
+  /*MEDIA INDEX A*/
+  .indexA {
+    grid-template-columns: 10% 80% 10%; }
+  .estamosEspecialmente {
+    height: 400px;
+    column-count: 1;
+    column-gap: 0%; }
+  /*MEDIA FOOTER*/
+  .footer {
+    display: grid;
+    opacity: 0.8;
+    background-color: #336699;
+    height: 180px;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: " logo    redes" "leyenda leyenda"; }
+  .logoVirafooter {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    grid-area: logo; }
+  .redesSociales {
+    text-align: left;
+    width: 90%;
+    height: 100px;
+    position: static;
+    top: 0px;
+    margin: auto;
+    display: inline-block;
+    left: 0px;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    grid-area: redes; }
+  .leyendaFooter {
+    margin-top: 10px;
+    font-style: normal;
+    color: white;
+    height: 20px;
+    font-size: 7px;
+    text-align: center;
+    position: static;
+    right: 0px;
+    bottom: 0px;
+    grid-area: leyenda; } }
 
 /*ANIMACIONES*/
+.navegador:hover {
+  font-size: 16px; }
 
-.navegador:hover{
-    font-size: 16px;
-}
+.logoInstagram:hover {
+  transform: scale(1.5, 1.5); }
 
-.logoInstagram:hover{
-    transform: scale(1.5, 1.5)
-}
+.logoFacebook:hover {
+  transform: scale(1.5, 1.5); }
 
-.logoFacebook:hover{
-    transform: scale(1.5, 1.5)
-}
+.imagenesNexus:hover {
+  transform: scale(1.05, 1.05); }
 
-.imagenesNexus:hover{
-    transform: scale(1.05, 1.05);
-}
+.imagenesColon:hover {
+  transform: scale(1.05, 1.05); }
 
-.imagenesColon:hover{
-    transform: scale(1.05, 1.05);
-}
+.imagenesDedalo:hover {
+  transform: scale(1.05, 1.05); }
 
-.imagenesDedalo:hover{
-    transform: scale(1.05, 1.05);
-}
-.imagenesLangostinos:hover{
-    transform: scale(1.05, 1.05);
-}
+.imagenesLangostinos:hover {
+  transform: scale(1.05, 1.05); }

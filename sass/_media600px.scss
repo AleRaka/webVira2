@@ -1,0 +1,147 @@
+@media screen and (max-width: 600px){
+    
+    /*MEDIA HEADER*/
+
+    li {
+        width: 80px;
+    }
+
+    /*MEDIA FOOTER*/
+
+    .redesSociales {
+        left: 230px;
+    }
+    .leyendaFooter {
+        font-size: 8px;
+    }
+
+    /*MEDIA INDEX A*/
+
+    .indexA{
+        grid-template-rows: 400px;
+
+        .proporcionarEl{
+            height: 250px;
+        }
+    }
+
+    /*MEDIA INDEX B*/
+  
+    .indexB{
+        display: grid;
+        grid-template-rows: 250px 250PX;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". ib2 ."
+                             ". ib3 .";
+
+        .cajaTecnica{
+            width: 100%;
+            height: 255px;
+            grid-area: ib2;
+
+            .oficinaTecnica{
+                padding-left: 15px;
+                text-align: left;
+                font-size: 15px;
+                height: 20px;
+            }
+            .leyendaOficina{
+                font-size: 13px;
+                height: 230px;
+                padding: 25px 15px 15px 15px;
+                grid-area: ib2;
+            }
+        } 
+        .oficinaTecnicaimg{
+            grid-area: ib3;
+            width: 100%;
+        } 
+    }
+
+    /*MEDIA INDEX C*/
+
+    .indexC{
+        grid-template-rows: 250px 250PX;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". ic2 ."
+                             ". ic3 .";
+
+        .cajaObra{
+            width: 100%;
+            height: 255px;
+            grid-area: ic2;
+
+            .ejecucionObra{
+                padding-left: 15px;
+                font-size: 15px;
+                height: 20px;
+            }
+            .leyendaObra{
+                font-size: 13px;
+                height: 230px;
+                padding: 25px 15px 15px 15px;
+                grid-area: ic2;
+            }
+        }
+        .ejecucionObraimg{
+            grid-area: ic3;
+            width: 100%;
+        }
+    }
+
+    /*MEDIA SERVICIOS A*/
+
+    .serviciosA{
+        grid-template-rows: 350px 300px;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas:  ". sa3 ."
+                              ". sa2. ";
+    }
+
+    .imagenResidenciales{
+        grid-area: sa2;
+        height: auto;
+        width: 100%;
+    }
+
+    .cajaResidenciales{
+        width: 100%;
+        height: 350px;
+        grid-area: sa3;
+    }
+     
+    .leyendaResidenciales{
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3;
+    }
+
+    /*SERVICIOS B*/
+
+    .serviciosB{
+        grid-template-rows: 400px 300px;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas:  ". sa3 ."
+                              ". sa2. ";
+    }
+    
+    .imagenDesarrollos{
+        grid-area: sa2;
+        height: auto;
+        width: 100%;
+    }
+    
+    .cajaDesarrollos{
+        width: 100%;
+        height: 400px;
+        grid-area: sa3;
+    }
+      
+    .leyendaDesarrollos{
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3;
+    }
+}

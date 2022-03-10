@@ -1,0 +1,45 @@
+@media screen and (max-width: 750px){
+    
+    /*INDEX A*/
+
+    .indexA{
+        margin-top: 80px;
+        display: grid;
+        grid-template-rows: 300px 350px;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas: "ia1 ia2 ia3"
+                             "ia1 ia4 ia3";
+
+        .estamosEspecialmente{
+            padding: 10px;
+            width: 95%;
+            height: 350px;
+        }
+    }
+
+    /*SERVICIOS A*/
+
+    .leyendaResidenciales{
+        padding: 15px 15px 15px 15px;
+        font-size: 15px;
+    }
+    .leyendaDesarrollos{
+        padding: 15px 15px 15px 15px;
+        font-size: 15px;
+    }
+
+    /*GALERIA*/
+
+    .galeria{
+        grid-template-rows: 450px 50px 450px 50px 450px 50px 450px 50px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". ga1 ."
+                             ".  .  ."
+                             ". ga2 ."
+                             ".  .  ."
+                             ". ga3 ."
+                             ".  .  ."
+                             ". ga4 ."
+                             ".  .  .";
+    }   
+}
