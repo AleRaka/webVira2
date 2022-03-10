@@ -1,0 +1,49 @@
+/*ANIMACIONES*/
+    
+.navegador{
+
+    &hover{
+        font-size: 16px;
+    }
+}
+
+.logoInstagram{
+
+    &hover{
+        transform: scale(1.5, 1.5)
+    }
+}
+
+.logoFacebook{
+
+    &hover{
+        transform: scale(1.5, 1.5)
+    }
+}
+
+.imagenesNexus{
+
+    &hover{
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.imagenesColon{
+
+    &hover{
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.imagenesDedalo{
+
+    &hover{
+        transform: scale(1.05, 1.05);
+    }
+}
+.imagenesLangostinos{
+
+    &hover{
+    transform: scale(1.05, 1.05);
+    }
+}

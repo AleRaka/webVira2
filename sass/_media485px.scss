@@ -1,0 +1,73 @@
+@media screen and (max-width: 485px){
+    
+    nav{
+        margin-right: 10px;
+
+        li {
+            width: 70px;
+
+            .navegador{
+                font-size: 14px;
+            }
+        }
+    }
+
+    /*MEDIA INDEX A*/
+
+    .indexA{
+        grid-template-columns: 10% 80% 10%;
+
+        .estamosEspecialmente {
+            height: 400px;
+            column-count: 1;
+            column-gap: 0%;
+            
+        }
+    }
+
+    /*MEDIA FOOTER*/
+
+    .footer {
+        display: grid;
+        opacity: 0.8;
+        background-color: rgb(51, 102, 153);
+        height: 180px;
+        grid-template-rows: 70% 30%;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: " logo    redes"
+                             "leyenda leyenda";
+
+        .logoVirafooter {
+            position: static;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            grid-area: logo;
+        } 
+        .redesSociales {
+            text-align: left;
+            width: 90%;
+            height: 100px;
+            position: static;
+            top: 0px;
+            margin: auto;
+            display: inline-block;
+            left: 0px;
+            border-top: solid 3px white;
+            border-bottom: solid 3px white;
+            grid-area: redes;
+        }   
+        .leyendaFooter {
+            margin-top: 10px;
+            font-style: normal;
+            color: white;
+            height: 20px;
+            font-size: 7px;
+            text-align: center;
+            position: static;
+            right: 0px;
+            bottom: 0px;
+            grid-area: leyenda;
+        }              
+    }
+}
