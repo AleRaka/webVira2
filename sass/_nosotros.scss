@@ -149,19 +149,18 @@
             height: 300px;
             padding: 30px 55px 30px 55px;
             grid-area: ic2;
-        }   
-        .ejecucionObraimg{
-            grid-area: ic3;
-            height: 100%;
         }
-    }
-            
-    .ejecucionObra{
-        padding-left: 55px;
-        text-align: left;
-        color: rgb(51, 102, 153);
-        font-style: normal;
-        font-size: 20px;
-        height: 50px;
+        .ejecucionObra{
+            padding-left: 55px;
+            text-align: left;
+            color: rgb(51, 102, 153);
+            font-style: normal;
+            font-size: 20px;
+            height: 50px;
+        }  
+    }        
+    .ejecucionObraimg{
+        grid-area: ic3;
+        height: 100%;
     }
 }

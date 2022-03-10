@@ -252,16 +252,16 @@
       height: 300px;
       padding: 30px 55px 30px 55px;
       grid-area: ic2; }
-    .indexC .cajaObra .ejecucionObraimg {
-      grid-area: ic3;
-      height: 100%; }
-  .indexC .ejecucionObra {
-    padding-left: 55px;
-    text-align: left;
-    color: #336699;
-    font-style: normal;
-    font-size: 20px;
-    height: 50px; }
+    .indexC .cajaObra .ejecucionObra {
+      padding-left: 55px;
+      text-align: left;
+      color: #336699;
+      font-style: normal;
+      font-size: 20px;
+      height: 50px; }
+  .indexC .ejecucionObraimg {
+    grid-area: ic3;
+    height: 100%; }
 
 /*MAIN*/
 .tituloServicios {
