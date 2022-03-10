@@ -1,17 +1,19 @@
 @media screen and (max-width: 485px){
-    
-    nav{
-        margin-right: 10px;
 
-        li {
-            width: 70px;
+    .navegacionFondocaja{
 
-            .navegador{
-                font-size: 14px;
-            }
+        nav{
+            margin-right: 10px;
+
+            li {
+                width: 60px;
+
+                .navegador{
+                    font-size: 13px;
+                }
+            }   
         }
     }
-
     /*MEDIA INDEX A*/
 
     .indexA{
