@@ -340,7 +340,107 @@
       padding: 30px 55px 30px 55px;
       grid-area: sa2; }
 
-/*CONTACTO MAIN*/
+/*MAIN*/
+.tituloGaleria {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
+
+.galeria {
+  display: grid;
+  grid-template-rows: 450px 50px 450px 50px;
+  grid-template-columns: 6.5% 40% 6.5% 40% 6.5%;
+  grid-template-areas: ". ga1 . ga2 . " ".  .  .  .  . " ". ga3 . ga4 . " ".  .  .  .  . ";
+  justify-content: center;
+  /*GALERIA A*/
+  /*GALERIA B*/
+  /*GALERIA C*/
+  /*GALERIA D*/ }
+  .galeria .proyectosNexus {
+    grid-area: ga1;
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "title1" "img1";
+    justify-content: center; }
+    .galeria .proyectosNexus .leyendaNexus {
+      grid-area: title1;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom: solid 2px black; }
+    .galeria .proyectosNexus .imagenesNexus {
+      grid-area: img1;
+      width: 100%; }
+  .galeria .proyectosColon {
+    grid-area: ga2;
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "title2" "img2";
+    justify-content: center; }
+    .galeria .proyectosColon .leyendaColon {
+      grid-area: title2;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom: solid 2px black; }
+    .galeria .proyectosColon .imagenesColon {
+      grid-area: img2;
+      width: 100%; }
+  .galeria .proyectosDedalo {
+    grid-area: ga3;
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "title3" "img3";
+    justify-content: center; }
+    .galeria .proyectosDedalo .leyendaDedalo {
+      grid-area: title3;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom: solid 2px black; }
+    .galeria .proyectosDedalo .imagenesDedalo {
+      grid-area: img3;
+      width: 100%; }
+  .galeria .proyectosLangostinos {
+    grid-area: ga4;
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "title4" "img4";
+    justify-content: center; }
+    .galeria .proyectosLangostinos .leyendaLangostinos {
+      grid-area: title4;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom: solid 2px black; }
+    .galeria .proyectosLangostinos .imagenesLangostinos {
+      grid-area: img4;
+      width: 100%; }
+
+/*MAIN*/
 .tituloContacto {
   margin-top: 50px;
   text-align: center;
@@ -349,15 +449,7 @@
   font-size: 20px;
   height: 50px; }
 
-.tituloEncontranos {
-  margin-top: 50px;
-  text-align: center;
-  color: #336699;
-  font-style: normal;
-  font-size: 20px;
-  height: 50px; }
-
-/*CONTACTO FORM*/
+/*FORM*/
 .formContacto {
   opacity: 0.6;
   margin: auto;
@@ -366,32 +458,34 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px 50px 50px 50px 30px;
   grid-template-areas: "area1 area2" "area3 area2" "area4 area2" "area5 area2" "area6 area6"; }
+  .formContacto .nombre {
+    grid-area: area1;
+    border: 0.5px solid black; }
+  .formContacto .email {
+    grid-area: area3;
+    border: 0.5px solid black; }
+  .formContacto .empresa {
+    grid-area: area4;
+    border: 0.5px solid black; }
+  .formContacto .telefono {
+    grid-area: area5;
+    border: 0.5px solid black; }
+  .formContacto .mensaje {
+    grid-area: area2;
+    border: 0.5px solid black; }
+  .formContacto .enviar {
+    grid-area: area6;
+    border: 0.5px solid black; }
 
-.nombre {
-  grid-area: area1;
-  border: 0.5px solid black; }
+/*UBICACION*/
+.tituloEncontranos {
+  margin-top: 50px;
+  text-align: center;
+  color: #336699;
+  font-style: normal;
+  font-size: 20px;
+  height: 50px; }
 
-.email {
-  grid-area: area3;
-  border: 0.5px solid black; }
-
-.empresa {
-  grid-area: area4;
-  border: 0.5px solid black; }
-
-.telefono {
-  grid-area: area5;
-  border: 0.5px solid black; }
-
-.mensaje {
-  grid-area: area2;
-  border: 0.5px solid black; }
-
-.enviar {
-  grid-area: area6;
-  border: 0.5px solid black; }
-
-/*UBICACION CONTACTO*/
 .cajaUbicacion {
   text-align: center;
   margin: auto;
@@ -401,10 +495,9 @@
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 20px auto 20px;
   grid-template-areas: ".    .      ." ". ubicacion ." ".    .      ."; }
-
-.ubicacion {
-  grid-area: ubicacion;
-  width: 100%; }
+  .cajaUbicacion .ubicacion {
+    grid-area: ubicacion;
+    width: 100%; }
 
 /*RRHH*/
 .tituloTrabajo {
@@ -430,113 +523,103 @@
 .formCaja {
   margin-top: 50px;
   margin-bottom: 200px; }
-
-.formEmpleo {
-  opacity: 0.6;
-  margin: auto;
-  width: 60%;
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: 30px 30px 30px 30px 50px 30px;
-  grid-template-areas: "area1 area2 area2" "area3 area2 area2" "area4 area2 area2" "area5 area2 area2" "area6 area7 area9" "area8 area8 area8"; }
-
-.nombreEmpleo {
-  grid-area: area1;
-  border: 0.5px solid black; }
-
-.emailEmpleo {
-  grid-area: area3;
-  border: 0.5px solid black; }
-
-.edadEmpleo {
-  grid-area: area4;
-  border: 0.5px solid black; }
-
-.estudiosEmpleo {
-  grid-area: area5;
-  border: 0.5px solid black; }
-
-.preguntaEmpleo {
-  grid-area: area6;
-  border: 0.5px solid black; }
-
-.si {
-  grid-area: area7; }
-
-.no {
-  grid-area: area9; }
-
-.mensajeEmpleo {
-  grid-area: area2;
-  border: 0.5px solid black; }
-
-.enviarEmpleo {
-  grid-area: area8;
-  border: 0.5px solid black; }
+  .formCaja .formEmpleo {
+    opacity: 0.6;
+    margin: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 30px 30px 30px 30px 50px 30px;
+    grid-template-areas: "area1 area2 area2" "area3 area2 area2" "area4 area2 area2" "area5 area2 area2" "area6 area7 area9" "area8 area8 area8"; }
+    .formCaja .formEmpleo .nombreEmpleo {
+      grid-area: area1;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .emailEmpleo {
+      grid-area: area3;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .edadEmpleo {
+      grid-area: area4;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .estudiosEmpleo {
+      grid-area: area5;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .preguntaEmpleo {
+      grid-area: area6;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .si {
+      grid-area: area7; }
+    .formCaja .formEmpleo .no {
+      grid-area: area9; }
+    .formCaja .formEmpleo .mensajeEmpleo {
+      grid-area: area2;
+      border: 0.5px solid black; }
+    .formCaja .formEmpleo .enviarEmpleo {
+      grid-area: area8;
+      border: 0.5px solid black; }
 
 @media screen and (max-width: 1250px) {
-  /*MEDIA INDEX A*/
+  /*INDEX A*/
   .indexA {
     margin-top: 80px;
     display: grid;
     grid-template-rows: 300px 300px;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: ". ia2 ." ". ia4 ."; }
-  .proporcionarEl {
-    margin-top: 0px;
-    height: 200px;
-    width: 100%; }
-  .estamosEspecialmente {
-    margin-top: 0px;
-    font-size: 13px;
-    width: 95%; }
-  /*MEDIA INDEX B*/
+    .indexA .proporcionarEl {
+      margin-top: 0px;
+      height: 200px;
+      width: 100%; }
+    .indexA .estamosEspecialmente {
+      margin-top: 0px;
+      font-size: 13px;
+      width: 95%; }
+  /*INDEX B*/
   .indexB {
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 50% 40%;
     grid-template-areas: "ib2 ib3";
     justify-content: center; }
-  .cajaTecnica {
-    width: 100%;
-    height: 300px;
-    grid-area: ib2;
-    background-color: #e4e4e4; }
-  .leyendaOficina {
-    text-align: left;
-    color: #6185c1;
-    font-style: normal;
-    font-size: 18px;
-    height: 250px;
-    padding: 15px 15px 15px 15px;
-    grid-area: ib2; }
-  .oficinaTecnicaimg {
-    grid-area: ib3;
-    height: 100%; }
-  /*MEDIA INDEX C*/
+    .indexB .cajaTecnica {
+      width: 100%;
+      height: 300px;
+      grid-area: ib2;
+      background-color: #e4e4e4; }
+      .indexB .cajaTecnica .leyendaOficina {
+        text-align: left;
+        color: #6185c1;
+        font-style: normal;
+        font-size: 18px;
+        height: 250px;
+        padding: 15px 15px 15px 15px;
+        grid-area: ib2; }
+    .indexB .oficinaTecnicaimg {
+      grid-area: ib3;
+      height: 100%; }
+  /*INDEX C*/
   .indexC {
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 50% 40%;
     grid-template-areas: "ic2 ic3";
     justify-content: center; }
-  .cajaObra {
-    width: 100%;
-    height: 300px;
-    grid-area: ic2;
-    background-color: #e4e4e4; }
-  .leyendaObra {
-    text-align: left;
-    color: #6185c1;
-    font-style: normal;
-    font-size: 18px;
-    height: 250px;
-    padding: 15px 15px 15px 15px;
-    grid-area: ic2; }
-  .ejecucionObraimg {
-    grid-area: ic3;
-    height: 100%; }
-  /*MEDIA SERVICIOS A*/
+    .indexC .cajaObra {
+      width: 100%;
+      height: 300px;
+      grid-area: ic2;
+      background-color: #e4e4e4; }
+      .indexC .cajaObra .leyendaObra {
+        text-align: left;
+        color: #6185c1;
+        font-style: normal;
+        font-size: 18px;
+        height: 250px;
+        padding: 15px 15px 15px 15px;
+        grid-area: ic2; }
+    .indexC .ejecucionObraimg {
+      grid-area: ic3;
+      height: 100%; }
+  /*SERVICIOS A*/
   .tituloResidenciales {
     font-size: 17px; }
   .leyendaResidenciales {
@@ -549,73 +632,74 @@
     padding: 10px 20px 10px 20px; } }
 
 @media screen and (max-width: 992px) {
-  /*MEDIA HEADER*/
+  /*HEADER*/
   li {
     width: 100px; }
+  /*INDEX*/
   .somosunaEmpresa {
     width: 70%; }
-  /*MEDIA INDEX A*/
+  /*INDEX A*/
   .indexA {
     grid-template-columns: 10% 80% 10%; }
-  /*MEDIA INDEX B*/
+  /*INDEX B*/
   .indexB {
     display: grid;
     grid-template-rows: 255px;
     grid-template-columns: 5% 40% 35% 20%;
     grid-template-areas: ". ib2 ib3 .";
     justify-content: center; }
-  .oficinaTecnica {
-    padding-left: 15px;
-    text-align: left;
-    font-size: 15px;
-    height: 20px; }
-  .cajaTecnica {
-    width: 100%;
-    height: 255px;
-    grid-area: ib2; }
-  .leyendaOficina {
-    font-size: 13px;
-    height: 230px;
-    padding: 15px 15px 15px 15px;
-    grid-area: ib2; }
-  .oficinaTecnicaimg {
-    grid-area: ib3;
-    height: 100%; }
+    .indexB .cajaTecnica {
+      width: 100%;
+      height: 255px;
+      grid-area: ib2; }
+      .indexB .cajaTecnica .oficinaTecnica {
+        padding-left: 15px;
+        text-align: left;
+        font-size: 15px;
+        height: 20px; }
+      .indexB .cajaTecnica .leyendaOficina {
+        font-size: 13px;
+        height: 230px;
+        padding: 15px 15px 15px 15px;
+        grid-area: ib2; }
+    .indexB .oficinaTecnicaimg {
+      grid-area: ib3;
+      height: 100%; }
   /*MEDIA INDEX C*/
   .indexC {
     grid-template-rows: 255px;
     grid-template-columns: 5% 40% 35% 20%;
     grid-template-areas: ". ic2 ic3 ."; }
-  .ejecucionObra {
-    padding-left: 15px;
-    font-size: 15px;
-    height: 20px; }
-  .cajaObra {
-    width: 100%;
-    height: 255px;
-    grid-area: ic2; }
-  .leyendaObra {
-    font-size: 13px;
-    height: 230px;
-    padding: 15px 15px 15px 15px;
-    grid-area: ic2; }
-  .ejecucionObraimg {
-    grid-area: ic3;
-    height: 100%; } }
+    .indexC .cajaObra {
+      width: 100%;
+      height: 255px;
+      grid-area: ic2; }
+      .indexC .cajaObra .ejecucionObra {
+        padding-left: 15px;
+        font-size: 15px;
+        height: 20px; }
+      .indexC .cajaObra .leyendaObra {
+        font-size: 13px;
+        height: 230px;
+        padding: 15px 15px 15px 15px;
+        grid-area: ic2; }
+    .indexC .ejecucionObraimg {
+      grid-area: ic3;
+      height: 100%; } }
 
 @media screen and (max-width: 750px) {
-  /*MEDIA INDEX A*/
+  /*INDEX A*/
   .indexA {
     margin-top: 80px;
     display: grid;
     grid-template-rows: 300px 350px;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: "ia1 ia2 ia3" "ia1 ia4 ia3"; }
-  .estamosEspecialmente {
-    padding: 10px;
-    width: 95%;
-    height: 350px; }
-  /*MEDIA SERVICIOS A*/
+    .indexA .estamosEspecialmente {
+      padding: 10px;
+      width: 95%;
+      height: 350px; }
+  /*SERVICIOS A*/
   .leyendaResidenciales {
     padding: 15px 15px 15px 15px;
     font-size: 15px; }
@@ -640,103 +724,103 @@
   /*MEDIA INDEX A*/
   .indexA {
     grid-template-rows: 400px; }
-  .proporcionarEl {
-    height: 250px; }
+    .indexA .proporcionarEl {
+      height: 250px; }
   /*MEDIA INDEX B*/
   .indexB {
     display: grid;
     grid-template-rows: 250px 250PX;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: ". ib2 ." ". ib3 ."; }
-  .oficinaTecnica {
-    padding-left: 15px;
-    text-align: left;
-    font-size: 15px;
-    height: 20px; }
-  .cajaTecnica {
-    width: 100%;
-    height: 255px;
-    grid-area: ib2; }
-  .leyendaOficina {
-    font-size: 13px;
-    height: 230px;
-    padding: 25px 15px 15px 15px;
-    grid-area: ib2; }
-  .oficinaTecnicaimg {
-    grid-area: ib3;
-    width: 100%; }
+    .indexB .cajaTecnica {
+      width: 100%;
+      height: 255px;
+      grid-area: ib2; }
+      .indexB .cajaTecnica .oficinaTecnica {
+        padding-left: 15px;
+        text-align: left;
+        font-size: 15px;
+        height: 20px; }
+      .indexB .cajaTecnica .leyendaOficina {
+        font-size: 13px;
+        height: 230px;
+        padding: 25px 15px 15px 15px;
+        grid-area: ib2; }
+    .indexB .oficinaTecnicaimg {
+      grid-area: ib3;
+      width: 100%; }
   /*MEDIA INDEX C*/
   .indexC {
     grid-template-rows: 250px 250PX;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: ". ic2 ." ". ic3 ."; }
-  .ejecucionObra {
-    padding-left: 15px;
-    font-size: 15px;
-    height: 20px; }
-  .cajaObra {
-    width: 100%;
-    height: 255px;
-    grid-area: ic2; }
-  .leyendaObra {
-    font-size: 13px;
-    height: 230px;
-    padding: 25px 15px 15px 15px;
-    grid-area: ic2; }
-  .ejecucionObraimg {
-    grid-area: ic3;
-    width: 100%; }
+    .indexC .cajaObra {
+      width: 100%;
+      height: 255px;
+      grid-area: ic2; }
+      .indexC .cajaObra .ejecucionObra {
+        padding-left: 15px;
+        font-size: 15px;
+        height: 20px; }
+      .indexC .cajaObra .leyendaObra {
+        font-size: 13px;
+        height: 230px;
+        padding: 25px 15px 15px 15px;
+        grid-area: ic2; }
+    .indexC .ejecucionObraimg {
+      grid-area: ic3;
+      width: 100%; }
   /*MEDIA SERVICIOS A*/
   .serviciosA {
     grid-template-rows: 350px 300px;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: ". sa3 ." ". sa2. "; }
-  .imagenResidenciales {
-    grid-area: sa2;
-    height: auto;
-    width: 100%; }
-  .cajaResidenciales {
-    width: 100%;
-    height: 350px;
-    grid-area: sa3; }
-  .leyendaResidenciales {
-    font-size: 14px;
-    height: 180px;
-    padding: 20px 20px 20px 20px;
-    grid-area: sa3; }
+    .serviciosA .imagenResidenciales {
+      grid-area: sa2;
+      height: auto;
+      width: 100%; }
+    .serviciosA .cajaResidenciales {
+      width: 100%;
+      height: 350px;
+      grid-area: sa3; }
+      .serviciosA .cajaResidenciales .leyendaResidenciales {
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3; }
   /*SERVICIOS B*/
   .serviciosB {
     grid-template-rows: 400px 300px;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: ". sa3 ." ". sa2. "; }
-  .imagenDesarrollos {
-    grid-area: sa2;
-    height: auto;
-    width: 100%; }
-  .cajaDesarrollos {
-    width: 100%;
-    height: 400px;
-    grid-area: sa3; }
-  .leyendaDesarrollos {
-    font-size: 14px;
-    height: 180px;
-    padding: 20px 20px 20px 20px;
-    grid-area: sa3; } }
+    .serviciosB .imagenDesarrollos {
+      grid-area: sa2;
+      height: auto;
+      width: 100%; }
+    .serviciosB .cajaDesarrollos {
+      width: 100%;
+      height: 400px;
+      grid-area: sa3; }
+      .serviciosB .cajaDesarrollos .leyendaDesarrollos {
+        font-size: 14px;
+        height: 180px;
+        padding: 20px 20px 20px 20px;
+        grid-area: sa3; } }
 
 @media screen and (max-width: 485px) {
   nav {
     margin-right: 10px; }
-  li {
-    width: 70px; }
-  .navegador {
-    font-size: 14px; }
+    nav li {
+      width: 70px; }
+      nav li .navegador {
+        font-size: 14px; }
   /*MEDIA INDEX A*/
   .indexA {
     grid-template-columns: 10% 80% 10%; }
-  .estamosEspecialmente {
-    height: 400px;
-    column-count: 1;
-    column-gap: 0%; }
+    .indexA .estamosEspecialmente {
+      height: 400px;
+      column-count: 1;
+      column-gap: 0%; }
   /*MEDIA FOOTER*/
   .footer {
     display: grid;
@@ -746,54 +830,54 @@
     grid-template-rows: 70% 30%;
     grid-template-columns: 40% 60%;
     grid-template-areas: " logo    redes" "leyenda leyenda"; }
-  .logoVirafooter {
-    position: static;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    grid-area: logo; }
-  .redesSociales {
-    text-align: left;
-    width: 90%;
-    height: 100px;
-    position: static;
-    top: 0px;
-    margin: auto;
-    display: inline-block;
-    left: 0px;
-    border-top: solid 3px white;
-    border-bottom: solid 3px white;
-    grid-area: redes; }
-  .leyendaFooter {
-    margin-top: 10px;
-    font-style: normal;
-    color: white;
-    height: 20px;
-    font-size: 7px;
-    text-align: center;
-    position: static;
-    right: 0px;
-    bottom: 0px;
-    grid-area: leyenda; } }
+    .footer .logoVirafooter {
+      position: static;
+      width: 90%;
+      height: auto;
+      margin: auto;
+      grid-area: logo; }
+    .footer .redesSociales {
+      text-align: left;
+      width: 90%;
+      height: 100px;
+      position: static;
+      top: 0px;
+      margin: auto;
+      display: inline-block;
+      left: 0px;
+      border-top: solid 3px white;
+      border-bottom: solid 3px white;
+      grid-area: redes; }
+    .footer .leyendaFooter {
+      margin-top: 10px;
+      font-style: normal;
+      color: white;
+      height: 20px;
+      font-size: 7px;
+      text-align: center;
+      position: static;
+      right: 0px;
+      bottom: 0px;
+      grid-area: leyenda; } }
 
 /*ANIMACIONES*/
-.navegador:hover {
+.navegadorhover {
   font-size: 16px; }
 
-.logoInstagram:hover {
+.logoInstagramhover {
   transform: scale(1.5, 1.5); }
 
-.logoFacebook:hover {
+.logoFacebookhover {
   transform: scale(1.5, 1.5); }
 
-.imagenesNexus:hover {
+.imagenesNexushover {
   transform: scale(1.05, 1.05); }
 
-.imagenesColon:hover {
+.imagenesColonhover {
   transform: scale(1.05, 1.05); }
 
-.imagenesDedalo:hover {
+.imagenesDedalohover {
   transform: scale(1.05, 1.05); }
 
-.imagenesLangostinos:hover {
+.imagenesLangostinoshover {
   transform: scale(1.05, 1.05); }
