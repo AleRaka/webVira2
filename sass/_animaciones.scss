@@ -1,49 +1,54 @@
 /*ANIMACIONES*/
-    
-.navegador{
 
-    &hover{
-        font-size: 16px;
+.navegacionFondocaja{
+    nav{
+        li {
+            .navegador{
+                &:hover{
+                    font-size: 16px;
+                }
+            }
+        }   
     }
 }
 
 .logoInstagram{
 
-    &hover{
+    &:hover{
         transform: scale(1.5, 1.5)
     }
 }
 
 .logoFacebook{
 
-    &hover{
+    &:hover{
         transform: scale(1.5, 1.5)
     }
 }
 
 .imagenesNexus{
 
-    &hover{
+    &:hover{
         transform: scale(1.05, 1.05);
     }
 }
 
 .imagenesColon{
 
-    &hover{
+    &:hover{
         transform: scale(1.05, 1.05);
     }
 }
 
 .imagenesDedalo{
 
-    &hover{
+    &:hover{
         transform: scale(1.05, 1.05);
     }
 }
 .imagenesLangostinos{
 
-    &hover{
+    &:hover{
     transform: scale(1.05, 1.05);
     }
 }

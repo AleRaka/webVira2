@@ -864,23 +864,23 @@
       grid-area: leyenda; } }
 
 /*ANIMACIONES*/
-.navegadorhover {
+.navegacionFondocaja nav li .navegador:hover {
   font-size: 16px; }
 
-.logoInstagramhover {
+.logoInstagram:hover {
   transform: scale(1.5, 1.5); }
 
-.logoFacebookhover {
+.logoFacebook:hover {
   transform: scale(1.5, 1.5); }
 
-.imagenesNexushover {
+.imagenesNexus:hover {
   transform: scale(1.05, 1.05); }
 
-.imagenesColonhover {
+.imagenesColon:hover {
   transform: scale(1.05, 1.05); }
 
-.imagenesDedalohover {
+.imagenesDedalo:hover {
   transform: scale(1.05, 1.05); }
 
-.imagenesLangostinoshover {
+.imagenesLangostinos:hover {
   transform: scale(1.05, 1.05); }
