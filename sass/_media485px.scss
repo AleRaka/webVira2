@@ -139,15 +139,16 @@
                              "area2"
                              "area6";
     }
+
     /*RRHH*/
 
+    .leyendaTrabajo{
+        font-size: 15px;
+        width: 80%;
+    }
     .formCaja {
         .formEmpleo {
-            opacity: 0.6;
-            margin: auto;
             width: 80%;
-            display: grid;
-            grid-template-columns: 50% 25% 25%;
             grid-template-rows: 30px 30px 30px 30px 50px 100px 30px;
             grid-template-areas: "area1 area1 area1"
                                  "area3 area3 area3"
@@ -155,41 +156,18 @@
                                  "area5 area5 area5"
                                  "area6 area7 area9"
                                  "area2 area2 area2"
-                                 "area8 area8 area8";
-
-            .nombreEmpleo {
-                grid-area: area1;
-                border: 0.5px solid black;
-            }                   
-            .emailEmpleo {
-                grid-area: area3;
-                border: 0.5px solid black;
-            }                   
-            .edadEmpleo {
-                grid-area: area4;
-                border: 0.5px solid black;
-            }                    
-            .estudiosEmpleo {
-                grid-area: area5;
-                border: 0.5px solid black;
-            }                    
+                                 "area8 area8 area8";                                                           
             .preguntaEmpleo {
+                text-align: center;
+                font-size: 12px;
                 grid-area: area6;
-                border: 0.5px solid black;
+                align-self: center;
             }                    
-            .si {
-                grid-area: area7;                   
+            .si {   
+                align-self: center;               
             }
             .no{
-                grid-area: area9;
-            }
-            .mensajeEmpleo {
-                grid-area: area2;
-                border: 0.5px solid black;
-            }
-            .enviarEmpleo {
-                grid-area: area8;
-                border: 0.5px solid black;
+                align-self: center;
             }                      
         }
     }

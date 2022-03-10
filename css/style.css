@@ -935,39 +935,22 @@
     grid-template-rows: 50px 50px 50px 50px 110px 30px;
     grid-template-areas: "area1" "area3" "area4" "area5" "area2" "area6"; }
   /*RRHH*/
+  .leyendaTrabajo {
+    font-size: 15px;
+    width: 80%; }
   .formCaja .formEmpleo {
-    opacity: 0.6;
-    margin: auto;
     width: 80%;
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
     grid-template-rows: 30px 30px 30px 30px 50px 100px 30px;
     grid-template-areas: "area1 area1 area1" "area3 area3 area3" "area4 area4 area4" "area5 area5 area5" "area6 area7 area9" "area2 area2 area2" "area8 area8 area8"; }
-    .formCaja .formEmpleo .nombreEmpleo {
-      grid-area: area1;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .emailEmpleo {
-      grid-area: area3;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .edadEmpleo {
-      grid-area: area4;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .estudiosEmpleo {
-      grid-area: area5;
-      border: 0.5px solid black; }
     .formCaja .formEmpleo .preguntaEmpleo {
+      text-align: center;
+      font-size: 12px;
       grid-area: area6;
-      border: 0.5px solid black; }
+      align-self: center; }
     .formCaja .formEmpleo .si {
-      grid-area: area7; }
+      align-self: center; }
     .formCaja .formEmpleo .no {
-      grid-area: area9; }
-    .formCaja .formEmpleo .mensajeEmpleo {
-      grid-area: area2;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .enviarEmpleo {
-      grid-area: area8;
-      border: 0.5px solid black; } }
+      align-self: center; } }
 
 /*ANIMACIONES*/
 .navegacionFondocaja nav li .navegador:hover {
