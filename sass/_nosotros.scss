@@ -98,6 +98,7 @@
         height: 300px;
         grid-area: ib2;
         background-color: rgb(228, 228, 228);
+        overflow-y: hidden;
 
         .oficinaTecnica{
             padding-left: 55px;
@@ -140,6 +141,7 @@
         height: 400px;
         grid-area: ic2;
         background-color: rgb(228, 228, 228);
+        overflow-y: hidden;
 
         .ejecucionObra{
             padding-left: 55px;

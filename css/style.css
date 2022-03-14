@@ -211,7 +211,8 @@
     width: 100%;
     height: 300px;
     grid-area: ib2;
-    background-color: #e4e4e4; }
+    background-color: #e4e4e4;
+    overflow-y: hidden; }
     .indexB .cajaTecnica .oficinaTecnica {
       padding-left: 55px;
       text-align: left;
@@ -244,7 +245,8 @@
     width: 100%;
     height: 400px;
     grid-area: ic2;
-    background-color: #e4e4e4; }
+    background-color: #e4e4e4;
+    overflow-y: hidden; }
     .indexC .cajaObra .ejecucionObra {
       padding-left: 55px;
       text-align: left;
@@ -289,7 +291,8 @@
     width: 100%;
     height: 400px;
     grid-area: sa3;
-    background-color: #aaaaaa; }
+    background-color: #aaaaaa;
+    overflow-y: hidden; }
     .serviciosA .cajaResidenciales .tituloResidenciales {
       padding-top: 30px;
       text-align: center;
@@ -323,7 +326,8 @@
     width: 100%;
     height: 400px;
     grid-area: sa2;
-    background-color: #aaaaaa; }
+    background-color: #aaaaaa;
+    overflow-y: hidden; }
     .serviciosB .cajaDesarrollos .tituloDesarrollos {
       padding-top: 30px;
       text-align: center;
@@ -909,7 +913,7 @@
       grid-area: sa3; }
       .serviciosA .cajaResidenciales .leyendaResidenciales {
         font-size: 14px;
-        height: 180px;
+        height: 230px;
         padding: 20px 20px 20px 20px;
         grid-area: sa3; }
   /*SERVICIOS B*/
@@ -927,7 +931,7 @@
       grid-area: sa3; }
       .serviciosB .cajaDesarrollos .leyendaDesarrollos {
         font-size: 14px;
-        height: 180px;
+        height: 250px;
         padding: 20px 20px 20px 20px;
         grid-area: sa3; }
   /*CONTACTO FORM*/
