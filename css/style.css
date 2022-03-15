@@ -559,8 +559,7 @@
       grid-area: area5;
       border: 0.5px solid black; }
     .formCaja .formEmpleo .preguntaEmpleo {
-      grid-area: area6;
-      border: 0.5px solid black; }
+      grid-area: area6; }
     .formCaja .formEmpleo .si {
       grid-area: area7; }
     .formCaja .formEmpleo .no {
