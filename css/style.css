@@ -666,11 +666,12 @@
         padding-left: 15px;
         text-align: left;
         font-size: 15px;
-        height: 20px; }
+        height: 32px;
+        overflow-y: hidden; }
       .indexB .cajaTecnica .leyendaOficina {
-        font-size: 13px;
-        height: 230px;
-        padding: 15px 15px 15px 15px;
+        font-size: 12px;
+        height: 215px;
+        padding: 10px 10px 10px 10px;
         grid-area: ib2; }
     .indexB .oficinaTecnicaimg {
       grid-area: ib3;
@@ -687,7 +688,8 @@
       .indexC .cajaObra .ejecucionObra {
         padding-left: 15px;
         font-size: 15px;
-        height: 20px; }
+        height: 32px;
+        overflow-y: hidden; }
       .indexC .cajaObra .leyendaObra {
         font-size: 13px;
         height: 230px;
@@ -780,7 +782,8 @@
         padding-left: 15px;
         text-align: left;
         font-size: 15px;
-        height: 20px; }
+        height: 32px;
+        overflow-y: hidden; }
       .indexB .cajaTecnica .leyendaOficina {
         font-size: 13px;
         height: 230px;
@@ -801,7 +804,8 @@
       .indexC .cajaObra .ejecucionObra {
         padding-left: 15px;
         font-size: 15px;
-        height: 20px; }
+        height: 32px;
+        overflow-y: hidden; }
       .indexC .cajaObra .leyendaObra {
         font-size: 13px;
         height: 230px;
