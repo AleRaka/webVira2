@@ -345,7 +345,8 @@
       font-size: 18px;
       height: 300px;
       padding: 30px 55px 30px 55px;
-      grid-area: sa2; }
+      grid-area: sa2;
+      overflow-y: hidden; }
 
 /*VARIABLES*/
 /*MAIN*/
@@ -373,7 +374,8 @@
     grid-template-rows: 50px 400px;
     grid-template-columns: 100%;
     grid-template-areas: "title1" "img1";
-    justify-content: center; }
+    justify-content: center;
+    overflow-y: hidden; }
     .galeria .proyectosNexus .leyendaNexus {
       grid-area: title1;
       width: 100%;
@@ -393,7 +395,8 @@
     grid-template-rows: 50px 400px;
     grid-template-columns: 100%;
     grid-template-areas: "title2" "img2";
-    justify-content: center; }
+    justify-content: center;
+    overflow-y: hidden; }
     .galeria .proyectosColon .leyendaColon {
       grid-area: title2;
       width: 100%;
@@ -413,7 +416,8 @@
     grid-template-rows: 50px 400px;
     grid-template-columns: 100%;
     grid-template-areas: "title3" "img3";
-    justify-content: center; }
+    justify-content: center;
+    overflow-y: hidden; }
     .galeria .proyectosDedalo .leyendaDedalo {
       grid-area: title3;
       width: 100%;
@@ -433,7 +437,8 @@
     grid-template-rows: 50px 400px;
     grid-template-columns: 100%;
     grid-template-areas: "title4" "img4";
-    justify-content: center; }
+    justify-content: center;
+    overflow-y: hidden; }
     .galeria .proyectosLangostinos .leyendaLangostinos {
       grid-area: title4;
       width: 100%;

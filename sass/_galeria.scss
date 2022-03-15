@@ -36,6 +36,8 @@ $fondoSuave:rgb(228, 228, 228);
         grid-template-areas: "title1"
                               "img1";
         justify-content: center;
+        overflow-y: hidden;
+
 
         .leyendaNexus{
             grid-area: title1;
@@ -65,6 +67,8 @@ $fondoSuave:rgb(228, 228, 228);
         grid-template-areas: "title2"
                               "img2";
         justify-content: center;
+        overflow-y: hidden;
+
 
         .leyendaColon{
             grid-area: title2;
@@ -93,6 +97,8 @@ $fondoSuave:rgb(228, 228, 228);
         grid-template-areas: "title3"
                               "img3";
         justify-content: center;
+        overflow-y: hidden;
+
 
         .leyendaDedalo{
             grid-area: title3;
@@ -121,6 +127,8 @@ $fondoSuave:rgb(228, 228, 228);
         grid-template-areas: "title4"
                               "img4";
         justify-content: center;
+        overflow-y: hidden;
+
 
         .leyendaLangostinos{
             grid-area: title4;
