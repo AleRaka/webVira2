@@ -39,12 +39,13 @@ $fondoSuave:rgb(228, 228, 228);
         width: 60%;
         display: grid;
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: 30px 30px 30px 30px 50px 30px;
+        grid-template-rows: 30px 30px 30px 30px 50px 30px 30px;
         grid-template-areas: "area1 area2 area2"
                              "area3 area2 area2"
                              "area4 area2 area2"
                              "area5 area2 area2"
                              "area6 area7 area9"
+                        "archivos archivos archivos"
                              "area8 area8 area8";
 
         .nombreEmpleo {
@@ -76,6 +77,9 @@ $fondoSuave:rgb(228, 228, 228);
         .mensajeEmpleo {
             grid-area: area2;
             border: 0.5px solid black;
+        }
+        .dropZone {
+            grid-area: archivos;
         }
         .enviarEmpleo {
             grid-area: area8;
