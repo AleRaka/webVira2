@@ -127,6 +127,7 @@
     right: 40px;
     bottom: -50px; }
 
+/*VARIABLES*/
 /* MAIN */
 .logoVira {
   height: 200px;
@@ -266,6 +267,7 @@
     grid-area: ic3;
     height: 100%; }
 
+/*VARIABLES*/
 /*MAIN*/
 .tituloServicios {
   margin-top: 50px;
@@ -345,6 +347,7 @@
       padding: 30px 55px 30px 55px;
       grid-area: sa2; }
 
+/*VARIABLES*/
 /*MAIN*/
 .tituloGaleria {
   margin-top: 50px;
@@ -445,6 +448,7 @@
       grid-area: img4;
       width: 100%; }
 
+/*VARIABLES*/
 /*MAIN*/
 .tituloContacto {
   margin-top: 50px;
@@ -504,6 +508,7 @@
     grid-area: ubicacion;
     width: 100%; }
 
+/*VARIABLES*/
 /*RRHH*/
 .tituloTrabajo {
   margin-top: 50px;

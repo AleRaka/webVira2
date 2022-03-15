@@ -1,11 +1,17 @@
-  
+  /*VARIABLES*/
+
+$colorFuerte:rgb(51, 102, 153);
+$colorSuave:rgb(97, 133, 193);
+$fondoFuerte: rgb(170, 170, 170);
+$fondoSuave:rgb(228, 228, 228);
+
   
   /*MAIN*/
 
 .tituloServicios{
     margin-top: 50px;
     text-align: center;
-    color: rgb(51, 102, 153);
+    color: $colorFuerte;
     font-style: normal;
     font-size: 20px;
     height: 50px;
@@ -30,7 +36,7 @@
         width: 100%;
         height: 400px;
         grid-area: sa3;
-        background-color: rgb(170, 170, 170);
+        background-color: $fondoFuerte;
         overflow-y: hidden;
 
         .tituloResidenciales{
@@ -74,7 +80,7 @@
         width: 100%;
         height: 400px;
         grid-area: sa2;
-        background-color: rgb(170, 170, 170);
+        background-color: $fondoFuerte;
         overflow-y: hidden;
 
         .tituloDesarrollos{
