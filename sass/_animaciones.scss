@@ -52,3 +52,60 @@
     transform: scale(1.05, 1.05);
     }
 }
+
+
+.form{
+
+    .casilleroContacto{
+
+        &:before{
+            content:attr(type);
+            display:block;
+            margin:28px 0 0;
+            font-size:14px;
+            color:#5a5a5a;
+        }
+        .inputContacto{
+
+            &:focus{
+                border-bottom:2px solid #78788c;
+            }
+        }
+    }
+    .botonContacto{
+
+        &:hover{
+            background:#78788c;
+            color:#fff;
+        }
+    }
+
+}
+
+.formEmpleo{
+
+    .casilleroEmpleo{
+
+        &:before{
+            content:attr(type);
+            display:block;
+            margin:28px 0 0;
+            font-size:14px;
+            color:#5a5a5a;
+        }
+        .inputEmpleo{
+
+            &:focus{
+                border-bottom:2px solid #78788c;
+            }
+        }
+    }
+    .botonEmpleo{
+
+        &:hover{
+            background:#78788c;
+            color:#fff;
+        }
+    }
+
+}

@@ -30,7 +30,7 @@
 
     /*MEDIA FOOTER*/
 
-    .footer {
+    footer {
         display: grid;
         opacity: 0.8;
         background-color: rgb(51, 102, 153);
@@ -130,15 +130,41 @@
 
     /*CONTACTO FORM*/
 
-    .formContacto {
-        grid-template-columns: 100%;
-        grid-template-rows: 50px 50px 50px 50px 110px 30px;
-        grid-template-areas: "area1"
-                             "area3"
-                             "area4"
-                             "area5"
-                             "area2"
-                             "area6";
+    .form{
+    
+        .infoContacto{
+            height: 80px;
+            width:300px;
+            grid-template-columns: 10% 20% 70%;
+            grid-template-rows: 40px 40px;
+            grid-template-areas: ". iconoTelefono telefonoContacto"
+                                 ". iconoMail emailContacto";
+            align-items: center;
+    
+            .iconoTelefono{
+                width: 50px;
+                height: auto;
+                grid-area: iconoTelefono;
+                text-align: center;
+            }
+            
+            .telefonoContacto{
+                grid-area: telefonoContacto;
+                text-align: center;
+            }
+            
+            .iconoMail{
+                width: 40px;
+                height: auto;
+                grid-area: iconoMail;
+                text-align: center;
+            }
+            .emailContacto{
+                grid-area: emailContacto;
+                align-content: center;
+                text-align: center;
+            }
+        }
     }
 
     /*RRHH*/
@@ -147,29 +173,40 @@
         font-size: 15px;
         width: 80%;
     }
-    .formCaja {
-        .formEmpleo {
-            width: 80%;
-            grid-template-rows: 30px 30px 30px 30px 50px 100px 30px;
-            grid-template-areas: "area1 area1 area1"
-                                 "area3 area3 area3"
-                                 "area4 area4 area4"
-                                 "area5 area5 area5"
-                                 "area6 area7 area9"
-                                 "area2 area2 area2"
-                                 "area8 area8 area8";                                                           
-            .preguntaEmpleo {
+    .formEmpleo{
+    
+        .infoContacto{
+            height: 80px;
+            width:300px;
+            grid-template-columns: 10% 20% 70%;
+            grid-template-rows: 40px 40px;
+            grid-template-areas: ". iconoTelefono telefonoContacto"
+                                 ". iconoMail emailContacto";
+            align-items: center;
+    
+            .iconoTelefono{
+                width: 50px;
+                height: auto;
+                grid-area: iconoTelefono;
                 text-align: center;
-                font-size: 12px;
-                grid-area: area6;
-                align-self: center;
-            }                    
-            .si {   
-                align-self: center;               
             }
-            .no{
-                align-self: center;
-            }                      
+            
+            .telefonoContacto{
+                grid-area: telefonoContacto;
+                text-align: center;
+            }
+            
+            .iconoMail{
+                width: 40px;
+                height: auto;
+                grid-area: iconoMail;
+                text-align: center;
+            }
+            .emailContacto{
+                grid-area: emailContacto;
+                align-content: center;
+                text-align: center;
+            }
         }
     }
 }

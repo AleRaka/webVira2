@@ -6,7 +6,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Radio Canada', sans-serif;
   overflow-x: hidden; }
 
 .obraFondoimagen {
@@ -56,23 +56,24 @@
   left: 20px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 5px; }
   .teAcompañamoscaja .teAcompañamos {
     color: white;
     font-style: normal;
     font-size: 14px; }
 
-.footer {
+footer {
   opacity: 0.8;
   background-color: #336699;
   height: 180px; }
-  .footer .logoVirafooter {
+  footer .logoVirafooter {
     width: 170px;
     height: 100px;
     position: absolute;
     margin-left: 20px;
     margin-top: 25px; }
-  .footer .redesSociales {
+  footer .redesSociales {
     text-align: left;
     height: 100px;
     width: 200px;
@@ -83,41 +84,41 @@
     left: 300px;
     border-top: solid 3px white;
     border-bottom: solid 3px white; }
-    .footer .redesSociales .leyendaRedes {
+    footer .redesSociales .leyendaRedes {
       display: inline-block;
       font-size: 20px;
       color: white;
       font-style: normal;
       margin-top: 10px; }
-    .footer .redesSociales .cajaInstagram {
+    footer .redesSociales .cajaInstagram {
       display: flex;
       align-items: center;
       width: 200px;
       padding-top: 5px; }
-      .footer .redesSociales .cajaInstagram .logoInstagram {
+      footer .redesSociales .cajaInstagram .logoInstagram {
         width: 20px;
         height: 20px;
         display: inline-block; }
-      .footer .redesSociales .cajaInstagram .enlaceInstagram {
+      footer .redesSociales .cajaInstagram .enlaceInstagram {
         margin-left: 10px;
         font-style: normal;
         color: white;
         display: inline-block; }
-    .footer .redesSociales .cajaFacebook {
+    footer .redesSociales .cajaFacebook {
       display: flex;
       align-items: center;
       width: 200px;
       padding-top: 5px; }
-      .footer .redesSociales .cajaFacebook .logoFacebook {
+      footer .redesSociales .cajaFacebook .logoFacebook {
         width: 20px;
         height: 20px;
         display: inline-block; }
-      .footer .redesSociales .cajaFacebook .enlaceFacebook {
+      footer .redesSociales .cajaFacebook .enlaceFacebook {
         margin-left: 10px;
         font-style: normal;
         color: white;
         display: inline-block; }
-  .footer .leyendaFooter {
+  footer .leyendaFooter {
     font-style: normal;
     color: white;
     height: 20px;
@@ -454,42 +455,80 @@
       width: 100%; }
 
 /*VARIABLES*/
-/*MAIN*/
-.tituloContacto {
-  margin-top: 50px;
-  text-align: center;
-  color: #336699;
-  font-style: normal;
-  font-size: 20px;
-  height: 50px; }
-
 /*FORM*/
-.formContacto {
-  opacity: 0.6;
-  margin: auto;
-  width: 60%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50px 50px 50px 50px 30px;
-  grid-template-areas: "area1 area2" "area3 area2" "area4 area2" "area5 area2" "area6 area6"; }
-  .formContacto .nombre {
-    grid-area: area1;
-    border: 0.5px solid black; }
-  .formContacto .email {
-    grid-area: area3;
-    border: 0.5px solid black; }
-  .formContacto .empresa {
-    grid-area: area4;
-    border: 0.5px solid black; }
-  .formContacto .telefono {
-    grid-area: area5;
-    border: 0.5px solid black; }
-  .formContacto .mensaje {
-    grid-area: area2;
-    border: 0.5px solid black; }
-  .formContacto .enviar {
-    grid-area: area6;
-    border: 0.5px solid black; }
+.form {
+  width: 50%;
+  height: 500px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible; }
+  .form .contacto {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #336699;
+    border-bottom: 3px solid #78788c; }
+  .form .casilleroContacto .inputContacto {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2; }
+  .form .botonContacto {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat',sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s; }
+  .form .infoContacto {
+    content: 'Hi';
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #50505a;
+    color: #fff;
+    height: 25px;
+    width: 400px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
+    display: grid;
+    grid-template-columns: 10% 35% 10% 45%;
+    grid-template-rows: 25px;
+    grid-template-areas: "iconoTelefono telefonoContacto iconoMail emailContacto";
+    align-items: center; }
+    .form .infoContacto .iconoTelefono {
+      width: 50px;
+      height: auto;
+      grid-area: iconoTelefono;
+      text-align: center; }
+    .form .infoContacto .telefonoContacto {
+      grid-area: telefonoContacto;
+      text-align: center; }
+    .form .infoContacto .iconoMail {
+      width: 40px;
+      height: auto;
+      grid-area: iconoMail;
+      text-align: center; }
+    .form .infoContacto .emailContacto {
+      grid-area: emailContacto;
+      align-content: center;
+      text-align: center; }
 
 /*UBICACION*/
 .tituloEncontranos {
@@ -535,44 +574,138 @@
   margin: auto; }
 
 /*RRHH FORM*/
-.formCaja {
-  margin-top: 50px;
-  margin-bottom: 200px; }
-  .formCaja .formEmpleo {
-    opacity: 0.6;
-    margin: auto;
-    width: 60%;
+.formEmpleo {
+  width: 50%;
+  height: 500px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible; }
+  .formEmpleo .formulario {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #336699;
+    border-bottom: 3px solid #78788c; }
+  .formEmpleo .casilleroEmpleo .inputEmpleo {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2; }
+  .formEmpleo .botonEmpleo {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat',sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s; }
+  .formEmpleo .infoContacto {
+    content: 'Hi';
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #50505a;
+    color: #fff;
+    height: 25px;
+    width: 400px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 30px 30px 30px 30px 50px 30px 30px;
-    grid-template-areas: "area1 area2 area2" "area3 area2 area2" "area4 area2 area2" "area5 area2 area2" "area6 area7 area9" "archivos archivos archivos" "area8 area8 area8"; }
-    .formCaja .formEmpleo .nombreEmpleo {
-      grid-area: area1;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .emailEmpleo {
-      grid-area: area3;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .edadEmpleo {
-      grid-area: area4;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .estudiosEmpleo {
-      grid-area: area5;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .preguntaEmpleo {
-      grid-area: area6; }
-    .formCaja .formEmpleo .si {
-      grid-area: area7; }
-    .formCaja .formEmpleo .no {
-      grid-area: area9; }
-    .formCaja .formEmpleo .mensajeEmpleo {
-      grid-area: area2;
-      border: 0.5px solid black; }
-    .formCaja .formEmpleo .dropZone {
-      grid-area: archivos; }
-    .formCaja .formEmpleo .enviarEmpleo {
-      grid-area: area8;
-      border: 0.5px solid black; }
+    grid-template-columns: 10% 35% 10% 45%;
+    grid-template-rows: 25px;
+    grid-template-areas: "iconoTelefono telefonoContacto iconoMail emailContacto";
+    align-items: center; }
+    .formEmpleo .infoContacto .iconoTelefono {
+      width: 50px;
+      height: auto;
+      grid-area: iconoTelefono;
+      text-align: center; }
+    .formEmpleo .infoContacto .telefonoContacto {
+      grid-area: telefonoContacto;
+      text-align: center; }
+    .formEmpleo .infoContacto .iconoMail {
+      width: 40px;
+      height: auto;
+      grid-area: iconoMail;
+      text-align: center; }
+    .formEmpleo .infoContacto .emailContacto {
+      grid-area: emailContacto;
+      align-content: center;
+      text-align: center; }
 
+/*.formCaja {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    .formEmpleo {
+        opacity: 0.6;
+        margin: auto;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 30px 30px 30px 30px 50px 30px 30px;
+        grid-template-areas: "area1 area2 area2"
+                             "area3 area2 area2"
+                             "area4 area2 area2"
+                             "area5 area2 area2"
+                             "area6 area7 area9"
+                        "archivos archivos archivos"
+                             "area8 area8 area8";
+
+        .nombreEmpleo {
+            grid-area: area1;
+            border: 0.5px solid black;
+        }                   
+        .emailEmpleo {
+            grid-area: area3;
+            border: 0.5px solid black;
+        }                   
+        .edadEmpleo {
+            grid-area: area4;
+            border: 0.5px solid black;
+        }                    
+        .estudiosEmpleo {
+            grid-area: area5;
+            border: 0.5px solid black;
+        }                    
+        .preguntaEmpleo {
+            grid-area: area6;
+        }                    
+        .si {
+            grid-area: area7;
+                            
+        }
+        .no{
+            grid-area: area9;
+        }
+        .mensajeEmpleo {
+            grid-area: area2;
+            border: 0.5px solid black;
+        }
+        .dropZone {
+            grid-area: archivos;
+        }
+        .enviarEmpleo {
+            grid-area: area8;
+            border: 0.5px solid black;
+        }                      
+    }
+}*/
 @media screen and (max-width: 1250px) {
   /*INDEX A*/
   .indexA {
@@ -714,7 +847,9 @@
     font-size: 18px; }
   .serviciosB .cajaDesarrollos .leyendaDesarrollos {
     font-size: 15px; }
-  /*UBICACION*/
+  /*CONTACTO*/
+  .form {
+    width: 70%; }
   .cajaUbicacion {
     width: 80%;
     grid-template-columns: 10% 80% 10%; }
@@ -856,7 +991,9 @@
         height: 180px;
         padding: 20px 20px 20px 20px;
         grid-area: sa3; }
-  /*UBICACION*/
+  /*CONTACTO*/
+  .form {
+    width: 80%; }
   .cajaUbicacion {
     width: 80%;
     grid-template-columns: 5% 90% 5%; } }
@@ -876,7 +1013,7 @@
       column-count: 1;
       column-gap: 0%; }
   /*MEDIA FOOTER*/
-  .footer {
+  footer {
     display: grid;
     opacity: 0.8;
     background-color: #336699;
@@ -884,13 +1021,13 @@
     grid-template-rows: 70% 30%;
     grid-template-columns: 40% 60%;
     grid-template-areas: " logo    redes" "leyenda leyenda"; }
-    .footer .logoVirafooter {
+    footer .logoVirafooter {
       position: static;
       width: 90%;
       height: auto;
       margin: auto;
       grid-area: logo; }
-    .footer .redesSociales {
+    footer .redesSociales {
       text-align: left;
       width: 90%;
       height: 100px;
@@ -902,7 +1039,7 @@
       border-top: solid 3px white;
       border-bottom: solid 3px white;
       grid-area: redes; }
-    .footer .leyendaFooter {
+    footer .leyendaFooter {
       margin-top: 10px;
       font-style: normal;
       color: white;
@@ -950,27 +1087,58 @@
         padding: 20px 20px 20px 20px;
         grid-area: sa3; }
   /*CONTACTO FORM*/
-  .formContacto {
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 50px 50px 50px 110px 30px;
-    grid-template-areas: "area1" "area3" "area4" "area5" "area2" "area6"; }
+  .form .infoContacto {
+    height: 80px;
+    width: 300px;
+    grid-template-columns: 10% 20% 70%;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: ". iconoTelefono telefonoContacto" ". iconoMail emailContacto";
+    align-items: center; }
+    .form .infoContacto .iconoTelefono {
+      width: 50px;
+      height: auto;
+      grid-area: iconoTelefono;
+      text-align: center; }
+    .form .infoContacto .telefonoContacto {
+      grid-area: telefonoContacto;
+      text-align: center; }
+    .form .infoContacto .iconoMail {
+      width: 40px;
+      height: auto;
+      grid-area: iconoMail;
+      text-align: center; }
+    .form .infoContacto .emailContacto {
+      grid-area: emailContacto;
+      align-content: center;
+      text-align: center; }
   /*RRHH*/
   .leyendaTrabajo {
     font-size: 15px;
     width: 80%; }
-  .formCaja .formEmpleo {
-    width: 80%;
-    grid-template-rows: 30px 30px 30px 30px 50px 100px 30px;
-    grid-template-areas: "area1 area1 area1" "area3 area3 area3" "area4 area4 area4" "area5 area5 area5" "area6 area7 area9" "area2 area2 area2" "area8 area8 area8"; }
-    .formCaja .formEmpleo .preguntaEmpleo {
-      text-align: center;
-      font-size: 12px;
-      grid-area: area6;
-      align-self: center; }
-    .formCaja .formEmpleo .si {
-      align-self: center; }
-    .formCaja .formEmpleo .no {
-      align-self: center; } }
+  .formEmpleo .infoContacto {
+    height: 80px;
+    width: 300px;
+    grid-template-columns: 10% 20% 70%;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: ". iconoTelefono telefonoContacto" ". iconoMail emailContacto";
+    align-items: center; }
+    .formEmpleo .infoContacto .iconoTelefono {
+      width: 50px;
+      height: auto;
+      grid-area: iconoTelefono;
+      text-align: center; }
+    .formEmpleo .infoContacto .telefonoContacto {
+      grid-area: telefonoContacto;
+      text-align: center; }
+    .formEmpleo .infoContacto .iconoMail {
+      width: 40px;
+      height: auto;
+      grid-area: iconoMail;
+      text-align: center; }
+    .formEmpleo .infoContacto .emailContacto {
+      grid-area: emailContacto;
+      align-content: center;
+      text-align: center; } }
 
 /*ANIMACIONES*/
 .navegacionFondocaja nav li .navegador:hover {
@@ -993,3 +1161,31 @@
 
 .imagenesLangostinos:hover {
   transform: scale(1.05, 1.05); }
+
+.form .casilleroContacto:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.form .casilleroContacto .inputContacto:focus {
+  border-bottom: 2px solid #78788c; }
+
+.form .botonContacto:hover {
+  background: #78788c;
+  color: #fff; }
+
+.formEmpleo .casilleroEmpleo:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.formEmpleo .casilleroEmpleo .inputEmpleo:focus {
+  border-bottom: 2px solid #78788c; }
+
+.formEmpleo .botonEmpleo:hover {
+  background: #78788c;
+  color: #fff; }
